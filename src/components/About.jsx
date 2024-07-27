@@ -13,7 +13,7 @@ const About = () => {
       >
         About Me!
       </motion.h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 py-20 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 py-20 gap-8">
         <motion.img
           src={about}
           alt="About Me"
@@ -37,7 +37,7 @@ const About = () => {
           </motion.p>
           <div className="flex items-center justify-center gap-20">
             <motion.button
-              className="text-xl md:text-2xl py-4 my-10 px-2 border-4 border-blue-500 bg-blue-500 rounded-xl text-white "
+              className="text-lg md:text-2xl py-4 my-10 px-2 border-4 border-blue-500 bg-blue-500 rounded-xl text-white "
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
@@ -45,7 +45,7 @@ const About = () => {
               My Projects
             </motion.button>
             <motion.button
-              className="text-xl md:text-2xl py-4 my-10 px-2 border-4 border-blue-500 rounded-xl text-gray-800 dark:text-white"
+              className="text-lg md:text-2xl py-4 my-10 px-2 border-4 border-blue-500 rounded-xl text-gray-800 dark:text-white"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
