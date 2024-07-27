@@ -50,7 +50,7 @@ const Start = () => {
             <FaTwitter />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/hardik-daim-ab0b07251/"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -61,18 +61,18 @@ const Start = () => {
             <FaLinkedin />
           </motion.a>
           <motion.a
-            href="https://github.com/yourprofile"
+            href="https://github.com/HardikDaim"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-5xl text-gray-200 hover:text-gray-400"
+            className="text-5xl text-gray-700 dark:text-gray-200 hover:text-gray-400"
           >
             <FaGithub />
           </motion.a>
           <motion.a
-            href="https://www.instagram.com/yourprofile"
+            href="https://www.instagram.com/hardikdaim_17"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -83,7 +83,7 @@ const Start = () => {
             <FaInstagram />
           </motion.a>
           <motion.a
-            href="https://www.facebook.com/yourprofile"
+            href="https://www.facebook.com/hardik.daim"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}

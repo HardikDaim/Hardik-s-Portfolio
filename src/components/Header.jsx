@@ -5,9 +5,9 @@ import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
-    <div className="border-b shadow-lg bg-transparent sticky top-0 z-10">
+    <div className="border-b shadow-lg bg-white dark:bg-black sticky top-0 ">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center px-2 py-4">
           <div className="flex items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}

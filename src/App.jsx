@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { selectTheme } from "./store/themeSlice";
 import Header from "./components/Header.jsx";
 import Start from "./components/Start.jsx";
+import About from "./components/About.jsx";
 
 const App = () => {
   const theme = useSelector(selectTheme);
@@ -26,6 +27,7 @@ const App = () => {
     <div>
       <Header />
       <Start />
+      <About />
     </div>
   );
 };
