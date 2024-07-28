@@ -4,8 +4,10 @@ import { FaHome } from "react-icons/fa"; // Example icon
 import ThemeToggle from "./ThemeToggle";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ loader }) => {
+  const navigate = useNavigate();
   return (
     <div className="border-b shadow-lg bg-white dark:bg-black sticky top-0 z-50">
       <div className="max-w-7xl mx-auto">
@@ -21,7 +23,8 @@ const Header = ({ loader }) => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 cursor-pointer"
+                onClick={() => navigate('/')}
               >
                 <FaHome className="text-2xl text-blue-500" />
                 <h1 className="text-2xl font-bold">Hardik</h1>

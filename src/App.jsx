@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { selectTheme } from "./store/themeSlice";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.jsx";
-import Start from "./components/Start.jsx";
-import About from "./components/About.jsx";
-import Skills from "./components/Skills.jsx";
-import Projects from "./components/Projects.jsx";
-import Experience from "./components/Experience.jsx";
-import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 import { SkeletonTheme } from "react-loading-skeleton";
 import { Toaster } from "react-hot-toast";
-import Footer from "./components/Footer.jsx";
+import ProjectDetails from "./pages/ProjectDetails.jsx";
+import Home from "./pages/Home.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 const App = () => {
   const theme = useSelector(selectTheme);
@@ -47,15 +45,15 @@ const App = () => {
       baseColor={isDarkMode ? "#2c2c2c" : "#e0e0e0"}
       highlightColor={isDarkMode ? "#444" : "#f5f5f5"}
     >
-      <div>
-        <Header loader={loader} />
-        <Start loader={loader} />
-        <About loader={loader} />
-        <Skills loader={loader} />
-        <Experience loader={loader} />
-        <Projects loader={loader} />
-        <Contact loader={loader} />
-        <Footer loader={loader} />
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home loader={loader} />} />
+          <Route
+            path="/project/details/:projectId"
+            element={<ProjectDetails loader={loader}/>}
+          />
+        </Routes>
         <Toaster
           position="top-center"
           toastOptions={{
@@ -65,7 +63,7 @@ const App = () => {
             },
           }}
         />
-      </div>
+      </Router>
     </SkeletonTheme>
   );
 };
