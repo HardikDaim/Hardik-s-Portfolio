@@ -9,11 +9,10 @@ import {
 } from "react-icons/fa";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import profileImage from "../assets/profile.png";
 
 const Start = ({ loader }) => {
   const data = {
-    image: profileImage,
+    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/v1722176092/Portfolio/znksvzznuxtiytbovktt.png",
     name: "Hardik Daim",
     title: "Software Engineer",
     linkedIn: "https://www.linkedin.com/in/hardik-daim-ab0b07251",

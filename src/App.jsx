@@ -32,7 +32,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 1500);
+    }, 2000);
   }, []);
 
   const isDarkMode =
