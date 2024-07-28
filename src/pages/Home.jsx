@@ -1,4 +1,5 @@
-import React from "react";
+// Home.jsx
+import React, { useRef } from "react";
 import Start from "../components/Start";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -8,17 +9,19 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-const Home = ({loader}) => {
+const Home = ({ loader }) => {
+  const projectsRef = useRef(null);
+
   return (
     <>
       <Header loader={loader} />
       <Start loader={loader} />
-      <About loader={loader} />
+      <About loader={loader} projectsRef={projectsRef} />
       <Skills loader={loader} />
       <Experience loader={loader} />
-      <Projects loader={loader} />
+      <Projects loader={loader} ref={projectsRef} />
       <Contact loader={loader} />
-     <Footer loader={loader} />
+      <Footer loader={loader} />
     </>
   );
 };

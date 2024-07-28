@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+// About.jsx
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import about from "../assets/about.jpeg";
 
-const About = ({ loader }) => {
+const About = ({ loader, projectsRef }) => {
   const data = {
     title: "About Me!",
     description: `
@@ -15,6 +16,12 @@ const About = ({ loader }) => {
         deliver exceptional user experiences.
       `,
     image: about,
+  };
+
+  const scrollToProjects = () => {
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -67,6 +74,7 @@ const About = ({ loader }) => {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
+                  onClick={scrollToProjects}
                 >
                   My Projects
                 </motion.button>
