@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
-  FaTwitter,
   FaLinkedin,
   FaGithub,
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -18,7 +18,7 @@ const Start = ({ loader }) => {
     linkedIn: "https://www.linkedin.com/in/hardik-daim-ab0b07251",
     github: "https://github.com/HardikDaim",
     instagram: "https://www.instagram.com/hardikdaim_17",
-    twitter: "https://twitter.com/HardikDaim_",
+    leetCode: "https://leetcode.com/u/hardikdaim",
     facebook: "https://www.facebook.com/hardik.daim",
   };
 
@@ -65,15 +65,15 @@ const Start = ({ loader }) => {
           </motion.p>
           <div className="flex space-x-4 mt-4">
             <motion.a
-              href={data.twitter}
+              href={data.leetCode}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="text-5xl text-blue-500 hover:text-blue-700"
+              className="text-5xl text-orange-400 hover:text-orange-500"
             >
-              <FaTwitter />
+              <SiLeetcode />
             </motion.a>
             <motion.a
               href={data.linkedIn}
