@@ -13,7 +13,7 @@ const Projects = forwardRef(({ loader }, ref) => {
     <>
       <div
         ref={ref}
-        className="min-h-screen max-w-7xl px-2 mx-auto flex flex-col items-center justify-start mb-20 md:mb-0"
+        className="min-h-screen max-w-7xl px-2 mx-auto flex flex-col items-center justify-start mb-20 md:mt-20"
       >
         {loader ? (
           <>
