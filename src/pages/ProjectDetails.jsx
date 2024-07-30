@@ -6,12 +6,12 @@ import "react-loading-skeleton/dist/skeleton.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import projectsData from "../data/ProjectsData";
+import { Helmet } from "react-helmet-async";
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
   const project = projectsData.find((p) => p.id === projectId);
 
-  // State to manage loading
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
@@ -22,6 +22,18 @@ const ProjectDetails = () => {
 
   return (
     <>
+     <Helmet>
+        <title>{project ? `${project.title} - Project Details` : 'Project Details'}</title>
+        <meta name="description" content={project ? project.description : 'Details of the selected project.'} />
+        <meta property="og:title" content={project ? `${project.title} - Project Details` : 'Project Details'} />
+        <meta property="og:description" content={project ? project.description : 'Details of the selected project.'} />
+        <meta property="og:image" content={project ? project.image : 'https://hardik-daim.vercel.app/android-chrome-512x512.png'} />
+        <meta property="og:url" content={`https://hardik-daim.vercel.app/project/details/${projectId}`} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={project ? `${project.title} - Project Details` : 'Project Details'} />
+        <meta property="twitter:description" content={project ? project.description : 'Details of the selected project.'} />
+        <meta property="twitter:image" content={project ? project.image : 'https://hardik-daim.vercel.app/android-chrome-512x512.png'} />
+      </Helmet>
       <Header />
       <div className="min-h-screen max-w-7xl px-4 mx-auto flex flex-col items-center justify-start my-10">
         {loader ? (

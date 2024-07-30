@@ -6,9 +6,9 @@ import {
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import "../App.css"
 
 const Start = ({ loader }) => {
   const data = {
@@ -73,7 +73,7 @@ const Start = ({ loader }) => {
               transition={{ duration: 0.5 }}
               className="text-5xl text-orange-400 hover:text-orange-500"
             >
-              <SiLeetcode />
+              <img className="h-[48px] w-[48px] dark:logo-dark-mode" src="/leetcode.png" />
             </motion.a>
             <motion.a
               href={data.linkedIn}

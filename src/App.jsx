@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { selectTheme } from "./store/themeSlice";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
 import { SkeletonTheme } from "react-loading-skeleton";
 import { Toaster } from "react-hot-toast";
 import ProjectDetails from "./pages/ProjectDetails.jsx";
