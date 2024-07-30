@@ -15,12 +15,14 @@ const About = ({ loader, projectsRef }) => {
         specialize in creating dynamic and responsive applications that
         deliver exceptional user experiences.
       `,
+    resumeLink:
+      "https://drive.google.com/file/d/18zIEs4ddH-9UY7f0i7o9BmTORkURxh7Q/view?usp=share_link",
     image: about,
   };
 
   const scrollToProjects = () => {
     if (projectsRef.current) {
-      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+      projectsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -85,7 +87,7 @@ const About = ({ loader, projectsRef }) => {
                   transition={{ duration: 0.5 }}
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1palGekiNFyF5EFo_vyxLDolZIHVoQlA9/view?usp=share_link",
+                      data.resumeLink,
                       "_blank"
                     )
                   }
