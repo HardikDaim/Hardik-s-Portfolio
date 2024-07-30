@@ -18,10 +18,10 @@ const Home = ({ loader }) => {
     <>
       <Helmet>
         <title>Home | My Awesome Site</title>
-        <meta name="description" content="Welcome to the homepage of My Awesome Site, where you can find amazing content." />
-        <meta name="keywords" content="home, awesome, site" />
-        <meta property="og:title" content="Home | My Awesome Site" />
-        <meta property="og:description" content="Welcome to the homepage of My Awesome Site, where you can find amazing content." />
+        <meta name="description" content="Portfolio of Hardik Daim, a passionate Software Engineer specializing in building and optimizing web applications." />
+        <meta name="keywords" content="Hardik Daim, Software Engineer, Full Stack Developer, Web Developer, React, Node.js, Portfolio" />
+        <meta property="og:title" content="Hardik Daim's Portfolio" />
+        <meta property="og:description" content="Portfolio of Hardik Daim, a passionate Software Engineer specializing in building and optimizing web applications." />
         <meta property="og:image" content="https://hardik-daim.vercel.app/android-chrome-512x512.png" />
         <meta property="og:url" content="https://hardik-daim.vercel.app" />
         <meta property="og:type" content="website" />
