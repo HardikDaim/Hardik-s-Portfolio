@@ -47,14 +47,14 @@ const Start = ({ loader }) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           />
-          <motion.h2
+          <motion.h1
             className="text-5xl font-bold mb-2"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             {data.name}
-          </motion.h2>
+          </motion.h1>
           <motion.p
             className="text-xl"
             initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ const Start = ({ loader }) => {
               transition={{ duration: 0.5 }}
               className="text-5xl text-orange-400 hover:text-orange-500"
             >
-              <img className="h-[48px] w-[48px] dark:logo-dark-mode" src="/leetcode.png" />
+              <img className="h-[48px] w-[48px]" src="/leetcode.png" alt="LeetCode" />
             </motion.a>
             <motion.a
               href={data.linkedIn}
