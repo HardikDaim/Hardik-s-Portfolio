@@ -47,14 +47,14 @@ const Start = ({ loader }) => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           />
-          <motion.h1
+          <motion.h2
             className="text-5xl font-bold mb-2"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             {data.name}
-          </motion.h1>
+          </motion.h2>
           <motion.p
             className="text-xl"
             initial={{ opacity: 0, y: 20 }}

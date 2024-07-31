@@ -27,7 +27,7 @@ const Header = ({ loader }) => {
                 onClick={() => navigate('/')}
               >
                 <FaHome className="text-2xl text-blue-500" />
-                <h1 className="text-2xl font-bold">Hardik</h1>
+                <h2 className="text-2xl font-bold">Hardik</h2>
               </motion.div>
             )}
           </div>

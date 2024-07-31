@@ -44,14 +44,14 @@ const About = ({ loader, projectsRef }) => {
         </div>
       ) : (
         <>
-          <motion.h1
+          <motion.h2
             className="text-5xl md:text-7xl font-bold"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             {data.title}
-          </motion.h1>
+          </motion.h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 pt-20 gap-8">
             <motion.img
               src={data.image}
