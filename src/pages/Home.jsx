@@ -9,6 +9,7 @@ const Projects = lazy(() => import("../components/Projects"));
 const Contact = lazy(() => import("../components/Contact"));
 const Footer = lazy(() => import("../components/Footer"));
 const Header = lazy(() => import("../components/Header"));
+const Testimonial = lazy(() => import("../components/Testimonial"));
 
 const Home = ({ loader }) => {
   const projectsRef = useRef(null);
@@ -22,6 +23,7 @@ const Home = ({ loader }) => {
         <Skills loader={loader} />
         <Experience loader={loader} />
         <Projects loader={loader} ref={projectsRef} />
+        <Testimonial loader={loader} />
         <Contact loader={loader} />
         <Footer loader={loader} />
       </Suspense>

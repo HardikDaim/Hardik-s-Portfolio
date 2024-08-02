@@ -3,9 +3,9 @@ import Skeleton from 'react-loading-skeleton';
 
 const Footer = ({ loader }) => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-gray-200 dark:bg-gray-800 text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0">
+        <div className="mb-4 md:mb-0 text-black dark:text-white">
           {loader ? (
             <Skeleton width={150} height={30} className="mb-2" />
           ) : (
@@ -26,8 +26,8 @@ const Footer = ({ loader }) => {
             </div>
           ) : (
             <>
-              <a href="mailto:hardikdaim@gmail.com" className="text-gray-400 hover:text-white mx-2">hardikdaim@gmail.com</a>
-              <a href="tel:+91 95182-13371" className="text-gray-400 hover:text-white mx-2">+91 95182-13371</a>
+              <a href="mailto:hardikdaim@gmail.com" className="text-gray-600 dark:text-gray-400 dark:hover:text-white mx-2">hardikdaim@gmail.com</a>
+              <a href="tel:+91 95182-13371" className="text-gray-600 dark:text-gray-400  dark:hover:text-white mx-2">+91 95182-13371</a>
             </>
           )}
         </div>

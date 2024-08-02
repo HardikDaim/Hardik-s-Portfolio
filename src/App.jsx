@@ -7,6 +7,8 @@ import { Toaster } from "react-hot-toast";
 import ProjectDetails from "./pages/ProjectDetails.jsx";
 import Home from "./pages/Home.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import BlogList from "./components/BlogList.jsx";
+import BlogPost from "./components/BlogPost.jsx";
 
 const App = () => {
   const theme = useSelector(selectTheme);
@@ -46,11 +48,10 @@ const App = () => {
       <Router>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home loader={loader} />} />
-          <Route
-            path="/project/details/:projectId"
-            element={<ProjectDetails loader={loader}/>}
-          />
+          <Route path="/" exact element={<Home loader={loader} />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/project/details/:projectId" element={<ProjectDetails />} />
         </Routes>
         <Toaster
           position="top-center"
