@@ -26,7 +26,7 @@ const Start = ({ loader }) => {
     <div className="min-h-screen max-w-7xl mx-auto flex flex-col items-center justify-center">
       {loader ? (
         <div className="flex flex-col items-center">
-          <Skeleton circle={true} height={384} width={384} />
+          <Skeleton circle={true} height={300} width={300} />
           <Skeleton height={40} width={200} className="mt-4" />
           <Skeleton height={30} width={150} className="mt-2" />
           <div className="flex space-x-4 mt-4">
@@ -42,7 +42,7 @@ const Start = ({ loader }) => {
           <motion.img
             src={data.image}
             alt="Hardik Daim"
-            className="w-96 h-96 rounded-full object-cover mb-4"
+            className="w-72 h-72 rounded-full object-cover mb-4"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
