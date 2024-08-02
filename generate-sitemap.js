@@ -38,7 +38,7 @@ const generateSitemap = async () => {
   
   projectsData.forEach(project => {
     sitemap += `  <url>\n`;
-    sitemap += `    <loc>https://hardik-daim.vercel.app/projects/${project.id}</loc>\n`;
+    sitemap += `    <loc>https://hardik-daim.vercel.app/project/details/${project.id}</loc>\n`;
     sitemap += `    <lastmod>${new Date().toISOString()}</lastmod>\n`;
     sitemap += `    <priority>0.8</priority>\n`;  // Adjust priority if needed
     sitemap += `  </url>\n`;
