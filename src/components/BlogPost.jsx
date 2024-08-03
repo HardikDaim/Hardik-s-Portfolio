@@ -13,38 +13,17 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <title>{post.title} - Hardik Daim's Portfolio</title>
-        <meta name="description" content={post.excerpt} />
-        <meta
-          name="keywords"
-          content={`Hardik Daim, blog, ${post.title}, web development, software engineering`}
-        />
-        <meta
-          property="og:title"
-          content={`${post.title} - Hardik Daim's Portfolio`}
-        />
-        <meta property="og:description" content={post.excerpt} />
-        <meta
-          property="og:image"
-          content="https://hardik-daim.vercel.app/og-image-blogpost.jpg"
-        />
-        <meta
-          property="og:url"
-          content={`https://hardik-daim.vercel.app/blog/${post.id}`}
-        />
-        <meta
-          property="twitter:title"
-          content={`${post.title} - Hardik Daim's Portfolio`}
-        />
-        <meta property="twitter:description" content={post.excerpt} />
-        <meta
-          property="twitter:image"
-          content="https://hardik-daim.vercel.app/og-image-blogpost.jpg"
-        />
-        <meta
-          property="twitter:url"
-          content={`https://hardik-daim.vercel.app/blog/${post.id}`}
-        />
+        <title>{post ? `${post.title} - Hardik Daim's Portfolio` : 'Blog Post - Not Found'}</title>
+        <meta name="description" content={post ? post.excerpt : 'Blog post not found'} />
+        <meta name="keywords" content={post ? `Hardik Daim, blog, ${post.title}, web development, software engineering` : 'Blog post not found'} />
+        <meta property="og:title" content={post ? `${post.title} - Hardik Daim's Portfolio` : 'Blog Post - Not Found'} />
+        <meta property="og:description" content={post ? post.excerpt : 'Blog post not found'} />
+        <meta property="og:image" content={post ? "https://hardik-daim.vercel.app/og-image-blogpost.jpg" : "https://hardik-daim.vercel.app/og-image-blogpost.jpg"} />
+        <meta property="og:url" content={post ? `https://hardik-daim.vercel.app/blog/${post.id}` : "https://hardik-daim.vercel.app/blog"} />
+        <meta property="twitter:title" content={post ? `${post.title} - Hardik Daim's Portfolio` : 'Blog Post - Not Found'} />
+        <meta property="twitter:description" content={post ? post.excerpt : 'Blog post not found'} />
+        <meta property="twitter:image" content={post ? "https://hardik-daim.vercel.app/og-image-blogpost.jpg" : "https://hardik-daim.vercel.app/og-image-blogpost.jpg"} />
+        <meta property="twitter:url" content={post ? `https://hardik-daim.vercel.app/blog/${post.id}` : "https://hardik-daim.vercel.app/blog"} />
       </Helmet>
 
       <Header />
@@ -64,9 +43,24 @@ const BlogPost = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="mt-4 text-justify"
+              className="mt-4 text-justify flex flex-col justify-center items-center"
             >
-              {post.content}
+              {post.content.map((section, index) => {
+                if (section.type === 'text') {
+                  return <p key={index} className="mb-4">{section.content}</p>;
+                }
+                if (section.type === 'image') {
+                  return (
+                    <img
+                      key={index}
+                      src={section.src}
+                      alt={section.alt}
+                      className="w-full h-auto rounded-lg max-w-3xl mb-4"
+                    />
+                  );
+                }
+                return null;
+              })}
             </motion.div>
           </>
         ) : (
