@@ -18,11 +18,11 @@ const BlogPost = () => {
         <meta name="keywords" content={post ? `Hardik Daim, blog, ${post.title}, web development, software engineering` : 'Blog post not found'} />
         <meta property="og:title" content={post ? `${post.title} - Hardik Daim's Portfolio` : 'Blog Post - Not Found'} />
         <meta property="og:description" content={post ? post.excerpt : 'Blog post not found'} />
-        <meta property="og:image" content={post ? "https://hardik-daim.vercel.app/og-image-blogpost.jpg" : "https://hardik-daim.vercel.app/og-image-blogpost.jpg"} />
+        <meta property="og:image" content={post ? "https://hardik-daim.vercel.app/android-chrome-512x512.png" : "https://hardik-daim.vercel.app/android-chrome-512x512.png"} />
         <meta property="og:url" content={post ? `https://hardik-daim.vercel.app/blog/${post.id}` : "https://hardik-daim.vercel.app/blog"} />
         <meta property="twitter:title" content={post ? `${post.title} - Hardik Daim's Portfolio` : 'Blog Post - Not Found'} />
         <meta property="twitter:description" content={post ? post.excerpt : 'Blog post not found'} />
-        <meta property="twitter:image" content={post ? "https://hardik-daim.vercel.app/og-image-blogpost.jpg" : "https://hardik-daim.vercel.app/og-image-blogpost.jpg"} />
+        <meta property="twitter:image" content={post ? "https://hardik-daim.vercel.app/android-chrome-512x512.png" : "https://hardik-daim.vercel.app/android-chrome-512x512.png"} />
         <meta property="twitter:url" content={post ? `https://hardik-daim.vercel.app/blog/${post.id}` : "https://hardik-daim.vercel.app/blog"} />
       </Helmet>
 
