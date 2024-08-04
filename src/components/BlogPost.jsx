@@ -10,20 +10,39 @@ const BlogPost = () => {
   const { id } = useParams();
   const post = blogPosts.find((post) => post.id === id);
 
+  const defaultTitle = "Blog Post - Hardik Daim's Portfolio";
+  const defaultDescription =
+    "Explore insightful articles on web development, software engineering, and more.";
+  const defaultImage =
+    "https://hardik-daim.vercel.app/android-chrome-512x512.png";
+  const defaultUrl = "https://hardik-daim.vercel.app/blog";
+
+  const title = post ? `${post.title} - Hardik Daim's Portfolio` : defaultTitle;
+  const description = post ? post.excerpt : defaultDescription;
+  const imageUrl = post?.content.find((section) => section.type === 'image')?.src || defaultImage;
+  const url = post
+    ? `https://hardik-daim.vercel.app/blog/${post.id}`
+    : defaultUrl;
+
   return (
     <>
       <Helmet>
-        <title>{post ? `${post.title} - Hardik Daim's Portfolio` : 'Blog Post - Not Found'}</title>
-        <meta name="description" content={post ? post.excerpt : 'Blog post not found'} />
-        <meta name="keywords" content={post ? `Hardik Daim, blog, ${post.title}, web development, software engineering` : 'Blog post not found'} />
-        <meta property="og:title" content={post ? `${post.title} - Hardik Daim's Portfolio` : 'Blog Post - Not Found'} />
-        <meta property="og:description" content={post ? post.excerpt : 'Blog post not found'} />
-        <meta property="og:image" content={post ? "https://hardik-daim.vercel.app/android-chrome-512x512.png" : "https://hardik-daim.vercel.app/android-chrome-512x512.png"} />
-        <meta property="og:url" content={post ? `https://hardik-daim.vercel.app/blog/${post.id}` : "https://hardik-daim.vercel.app/blog"} />
-        <meta property="twitter:title" content={post ? `${post.title} - Hardik Daim's Portfolio` : 'Blog Post - Not Found'} />
-        <meta property="twitter:description" content={post ? post.excerpt : 'Blog post not found'} />
-        <meta property="twitter:image" content={post ? "https://hardik-daim.vercel.app/android-chrome-512x512.png" : "https://hardik-daim.vercel.app/android-chrome-512x512.png"} />
-        <meta property="twitter:url" content={post ? `https://hardik-daim.vercel.app/blog/${post.id}` : "https://hardik-daim.vercel.app/blog"} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta
+          name="keywords"
+          content={`Hardik Daim, blog, ${
+            post ? post.title : "web development, software engineering"
+          }`}
+        />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:url" content={url} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={imageUrl} />
+        <meta property="twitter:url" content={url} />
       </Helmet>
 
       <Header />
@@ -46,10 +65,14 @@ const BlogPost = () => {
               className="mt-4 text-justify flex flex-col justify-center items-center"
             >
               {post.content.map((section, index) => {
-                if (section.type === 'text') {
-                  return <p key={index} className="mb-4">{section.content}</p>;
+                if (section.type === "text") {
+                  return (
+                    <p key={index} className="mb-4">
+                      {section.content}
+                    </p>
+                  );
                 }
-                if (section.type === 'image') {
+                if (section.type === "image") {
                   return (
                     <img
                       key={index}
@@ -66,7 +89,9 @@ const BlogPost = () => {
         ) : (
           <div className="flex flex-col justify-center items-center min-h-screen">
             <p>No Such Blog Found</p>
-            <Link to="/blog" className="text-blue-500 hover:text-blue-700">Go to Blogs</Link>
+            <Link to="/blog" className="text-blue-500 hover:text-blue-700">
+              Go to Blogs
+            </Link>
           </div>
         )}
       </div>
