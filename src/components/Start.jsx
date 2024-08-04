@@ -12,7 +12,7 @@ import "../App.css"
 
 const Start = ({ loader }) => {
   const data = {
-    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/v1722176092/Portfolio/znksvzznuxtiytbovktt.png",
+    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/znksvzznuxtiytbovktt",
     name: "Hardik Daim",
     title: "Software Engineer",
     linkedIn: "https://www.linkedin.com/in/hardik-daim-ab0b07251",

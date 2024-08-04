@@ -7,7 +7,7 @@ const projectsData = [
     description:
       "A full-featured e-commerce platform built with React, Redux, Node.js, and MongoDB. It includes a product catalog, shopping cart, user authentication, and a comprehensive seller & admin dashboard.",
     image:
-      "https://res.cloudinary.com/dpqzwyq66/image/upload/v1722175052/Portfolio/yz0d5wkxg2afocbj1z8d.png",
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/yz0d5wkxg2afocbj1z8d",
     liveLink: "https://shop-cart-ten-chi.vercel.app",
     gitHubLink: "https://github.com/HardikDaim/ShopCart-Frontend",
     technologies: [
@@ -49,7 +49,7 @@ const projectsData = [
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills. It features a modern design with interactive elements and a dynamic projects section.",
     image:
-      "https://res.cloudinary.com/dpqzwyq66/image/upload/v1722175523/Portfolio/ltazhaa6en21uhyenf3l.png",
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/ltazhaa6en21uhyenf3l",
     liveLink: "https://hardik-daim.vercel.app",
     gitHubLink: "https://github.com/HardikDaim/Hardik-s-Portfolio",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
@@ -84,7 +84,7 @@ const projectsData = [
     title: "Real-time Chat Application",
     description:
       "A real-time chat application using Socket.IO, Node.js, and React for seamless communication. It supports multiple chat rooms, private messaging, and notifications within the E-Commerce Platform.",
-    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/v1722177223/Portfolio/pjsdafz9ugcwo07mudzc.png", 
+    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/pjsdafz9ugcwo07mudzc", 
     liveLink: "https://shop-cart-ten-chi.vercel.app",
     gitHubLink: "https://github.com/HardikDaim/ShopCart-Frontend",
     technologies: ["React", "Node.js", "Socket.IO", "Express.js"],
@@ -119,7 +119,7 @@ const projectsData = [
     title: "Social Media App",
     description:
       "A Social Media App built using React, Redux, MongoDB, and Express.js where users can share photos, follow friends, and like or comment on posts.",
-    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/v1722177701/Portfolio/dwobzir08nipq0sngve9.jpg",
+    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/dwobzir08nipq0sngve9",
     liveLink: "https://github.com/HardikDaim/SocialMedia-Frontend",
     gitHubLink: "https://github.com/HardikDaim/SocialMedia-Frontend",
     technologies: ["React", "Redux", "MongoDB", "Express.js"],
@@ -156,7 +156,7 @@ const projectsData = [
     title: "Task Manager",
     description:
       "A task management tool built with React and Redux, featuring drag-and-drop functionality, task prioritization, and deadline tracking.",
-    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/v1722178190/Portfolio/gqwpk52umdg2tb1jpvru.png",
+    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/gqwpk52umdg2tb1jpvru",
     liveLink: "https://github.com/HardikDaim/",
     gitHubLink: "https://github.com/HardikDaim/",
     technologies: ["React", "Redux"],
