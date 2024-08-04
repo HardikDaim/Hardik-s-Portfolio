@@ -21,7 +21,7 @@ const BlogList = () => {
         />
         <meta
           name="keywords"
-          content="Hardik Daim, blogs, web development, software engineering, technology"
+          content="Hardik Daim, blogs, web development, Software Engineer, technology, Full Stack Developer, Web Developer, React, Node.js, Portfolio, Hardik Portfolio, Hardik Daim Portfolio, Hardik"
         />
         <meta property="og:title" content="Blog - Hardik Daim's Portfolio" />
         <meta
@@ -83,7 +83,7 @@ const BlogList = () => {
                         "#dc2626", // Red-600
                         "#1d4ed8", // Blue-800
                         "#6d28d9", // Purple-700
-                        "#dc2626",// Red-600
+                        "#dc2626", // Red-600
                       ],
                     }}
                     transition={{
