@@ -336,45 +336,45 @@ const blogPosts = [
   //   ],
   //   date: "August 6, 2024",
   // },
-  // {
-  //   id: "understanding-react-hooks-for-cleaner-code",
-  //   title: "Understanding React Hooks for Cleaner Code",
-  //   excerpt:
-  //     "Explore how React Hooks can simplify your component logic and make your code cleaner and more maintainable.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "React Hooks have revolutionized the way we manage state and side effects in functional components. They allow developers to use state and other React features without writing a class. Two essential hooks are useState and useEffect, which handle state management and side effects respectively.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/zqbddxhyt02cogtxumuj",
-  //       alt: "React Hooks",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "The useState hook is perfect for adding local state to your components. It simplifies state management and makes your code more predictable. On the other hand, useEffect handles side effects like data fetching or subscribing to external events, ensuring that your components stay in sync with the rest of your app.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By using hooks, you can avoid the complexity of class-based components and achieve a cleaner and more modular codebase. Hooks also allow for better reuse of stateful logic between components, leading to more maintainable and testable code.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/glvpbxi9fms1oxylurxe",
-  //       alt: "React Hooks in Action",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Embrace React Hooks to write more concise, readable, and maintainable code. Understanding how to effectively use these hooks will greatly enhance your React development experience and improve the quality of your applications.",
-  //     },
-  //   ],
-  //   date: "August 5, 2024",
-  // },
+  {
+    id: "understanding-react-hooks-for-cleaner-code",
+    title: "Understanding React Hooks for Cleaner Code",
+    excerpt:
+      "Explore how React Hooks can simplify your component logic and make your code cleaner and more maintainable.",
+    content: [
+      {
+        type: "text",
+        content:
+          "React Hooks have revolutionized the way we manage state and side effects in functional components. They allow developers to use state and other React features without writing a class. Two essential hooks are useState and useEffect, which handle state management and side effects respectively.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/zqbddxhyt02cogtxumuj",
+        alt: "React Hooks",
+      },
+      {
+        type: "text",
+        content:
+          "The useState hook is perfect for adding local state to your components. It simplifies state management and makes your code more predictable. On the other hand, useEffect handles side effects like data fetching or subscribing to external events, ensuring that your components stay in sync with the rest of your app.",
+      },
+      {
+        type: "text",
+        content:
+          "By using hooks, you can avoid the complexity of class-based components and achieve a cleaner and more modular codebase. Hooks also allow for better reuse of stateful logic between components, leading to more maintainable and testable code.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/glvpbxi9fms1oxylurxe",
+        alt: "React Hooks in Action",
+      },
+      {
+        type: "text",
+        content:
+          "Embrace React Hooks to write more concise, readable, and maintainable code. Understanding how to effectively use these hooks will greatly enhance your React development experience and improve the quality of your applications.",
+      },
+    ],
+    date: "August 5, 2024",
+  },
   {
     id: "advanced-javascript-concepts-for-modern-development",
     title: "Advanced JavaScript Concepts for Modern Development",
