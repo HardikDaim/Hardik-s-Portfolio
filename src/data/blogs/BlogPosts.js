@@ -297,45 +297,45 @@ const blogPosts = [
   //   date: "August 7, 2024",
   // },
 
-  // {
-  //   id: "exploring-tailwind-css-for-modern-design",
-  //   title: "Exploring Tailwind CSS for Modern Design",
-  //   excerpt:
-  //     "Discover how Tailwind CSS can help you create modern, responsive designs with ease and flexibility.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Tailwind CSS is a utility-first CSS framework that allows developers to build custom designs without leaving their HTML. Unlike traditional CSS frameworks that provide pre-designed components, Tailwind focuses on providing low-level utility classes that you can combine to create your own designs.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/dqwh8pd7mycayyskydru",
-  //       alt: "Tailwind CSS Overview",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "One of the key benefits of Tailwind is its flexibility. You can easily customize your design system by configuring Tailwind's settings. This means you can adjust colors, spacing, and other design aspects to match your project's needs without writing custom CSS.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Tailwind also promotes a more consistent design language across your application. By using utility classes, you reduce the risk of inconsistencies and ensure that your designs are cohesive and maintainable.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/f0fdqmgwsokk2wcbkywm",
-  //       alt: "Tailwind Responsive Design",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Tailwind CSS can significantly streamline your development process and enhance the overall design quality of your applications. With its powerful utility classes and customization options, Tailwind is an excellent choice for modern web design.",
-  //     },
-  //   ],
-  //   date: "August 6, 2024",
-  // },
+  {
+    id: "exploring-tailwind-css-for-modern-design",
+    title: "Exploring Tailwind CSS for Modern Design",
+    excerpt:
+      "Discover how Tailwind CSS can help you create modern, responsive designs with ease and flexibility.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Tailwind CSS is a utility-first CSS framework that allows developers to build custom designs without leaving their HTML. Unlike traditional CSS frameworks that provide pre-designed components, Tailwind focuses on providing low-level utility classes that you can combine to create your own designs.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/dqwh8pd7mycayyskydru",
+        alt: "Tailwind CSS Overview",
+      },
+      {
+        type: "text",
+        content:
+          "One of the key benefits of Tailwind is its flexibility. You can easily customize your design system by configuring Tailwind's settings. This means you can adjust colors, spacing, and other design aspects to match your project's needs without writing custom CSS.",
+      },
+      {
+        type: "text",
+        content:
+          "Tailwind also promotes a more consistent design language across your application. By using utility classes, you reduce the risk of inconsistencies and ensure that your designs are cohesive and maintainable.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/f0fdqmgwsokk2wcbkywm",
+        alt: "Tailwind Responsive Design",
+      },
+      {
+        type: "text",
+        content:
+          "Tailwind CSS can significantly streamline your development process and enhance the overall design quality of your applications. With its powerful utility classes and customization options, Tailwind is an excellent choice for modern web design.",
+      },
+    ],
+    date: "August 6, 2024",
+  },
   {
     id: "understanding-react-hooks-for-cleaner-code",
     title: "Understanding React Hooks for Cleaner Code",
