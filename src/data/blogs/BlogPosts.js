@@ -257,45 +257,45 @@ const blogPosts = [
   //   date: "August 8, 2024",
   // },
 
-  // {
-  //   id: "building-responsive-web-applications-with-flexbox",
-  //   title: "Building Responsive Web Applications with Flexbox",
-  //   excerpt:
-  //     "Learn how to use Flexbox to create responsive web applications that look great on any device.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Flexbox is a CSS layout module designed to help you build complex and responsive web layouts with ease. It allows you to control the alignment, direction, and size of elements in a container, making it perfect for creating fluid and adaptable designs.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/inhgnhi6ykywoeb8zztw",
-  //       alt: "Flexbox Overview",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "With Flexbox, you can easily create layouts that adapt to different screen sizes and orientations. Flexbox properties like flex-direction, justify-content, and align-items give you the flexibility to design responsive interfaces without relying on floats or positioning.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Flexbox also simplifies the alignment of elements both horizontally and vertically. This makes it easier to build components like navbars, cards, and grids that look consistent across various devices and resolutions.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ymvp0s6luwgluqmavris",
-  //       alt: "Flexbox Responsive Design",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Mastering Flexbox is crucial for modern web development. It allows you to create adaptable, responsive designs efficiently, ensuring a great user experience on any device.",
-  //     },
-  //   ],
-  //   date: "August 7, 2024",
-  // },
+  {
+    id: "building-responsive-web-applications-with-flexbox",
+    title: "Building Responsive Web Applications with Flexbox",
+    excerpt:
+      "Learn how to use Flexbox to create responsive web applications that look great on any device.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Flexbox is a CSS layout module designed to help you build complex and responsive web layouts with ease. It allows you to control the alignment, direction, and size of elements in a container, making it perfect for creating fluid and adaptable designs.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/inhgnhi6ykywoeb8zztw",
+        alt: "Flexbox Overview",
+      },
+      {
+        type: "text",
+        content:
+          "With Flexbox, you can easily create layouts that adapt to different screen sizes and orientations. Flexbox properties like flex-direction, justify-content, and align-items give you the flexibility to design responsive interfaces without relying on floats or positioning.",
+      },
+      {
+        type: "text",
+        content:
+          "Flexbox also simplifies the alignment of elements both horizontally and vertically. This makes it easier to build components like navbars, cards, and grids that look consistent across various devices and resolutions.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ymvp0s6luwgluqmavris",
+        alt: "Flexbox Responsive Design",
+      },
+      {
+        type: "text",
+        content:
+          "Mastering Flexbox is crucial for modern web development. It allows you to create adaptable, responsive designs efficiently, ensuring a great user experience on any device.",
+      },
+    ],
+    date: "August 7, 2024",
+  },
 
   {
     id: "exploring-tailwind-css-for-modern-design",
