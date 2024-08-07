@@ -217,45 +217,45 @@ const blogPosts = [
   //   date: "August 9, 2024",
   // },
 
-  // {
-  //   id: "getting-started-with-nextjs-for-server-side-rendering",
-  //   title: "Getting Started with Next.js for Server-Side Rendering",
-  //   excerpt:
-  //     "Discover how Next.js can enhance your web applications with server-side rendering and static site generation capabilities.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Next.js is a powerful framework for React that enables server-side rendering (SSR) and static site generation (SSG). These features allow you to build fast and SEO-friendly web applications by pre-rendering your pages on the server before they reach the client.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ysbxl59yatq6hwsxamca",
-  //       alt: "Next.js Server-Side Rendering",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Server-side rendering in Next.js improves the initial load time and enhances SEO by delivering fully rendered HTML pages to the client. This can lead to better performance and user experience, especially for content-heavy applications.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Static site generation allows you to generate HTML at build time, which can be served quickly from a CDN. This approach is ideal for content that doesn't change frequently and can be pre-rendered to achieve fast load times.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/y9tnnto0rerblslge4ei",
-  //       alt: "Next.js Overview",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Next.js combines the best of both SSR and SSG, allowing you to choose the rendering method that best fits your application's needs. Embracing Next.js can significantly improve the performance and scalability of your React applications.",
-  //     },
-  //   ],
-  //   date: "August 8, 2024",
-  // },
+  {
+    id: "getting-started-with-nextjs-for-server-side-rendering",
+    title: "Getting Started with Next.js for Server-Side Rendering",
+    excerpt:
+      "Discover how Next.js can enhance your web applications with server-side rendering and static site generation capabilities.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Next.js is a powerful framework for React that enables server-side rendering (SSR) and static site generation (SSG). These features allow you to build fast and SEO-friendly web applications by pre-rendering your pages on the server before they reach the client.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ysbxl59yatq6hwsxamca",
+        alt: "Next.js Server-Side Rendering",
+      },
+      {
+        type: "text",
+        content:
+          "Server-side rendering in Next.js improves the initial load time and enhances SEO by delivering fully rendered HTML pages to the client. This can lead to better performance and user experience, especially for content-heavy applications.",
+      },
+      {
+        type: "text",
+        content:
+          "Static site generation allows you to generate HTML at build time, which can be served quickly from a CDN. This approach is ideal for content that doesn't change frequently and can be pre-rendered to achieve fast load times.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/y9tnnto0rerblslge4ei",
+        alt: "Next.js Overview",
+      },
+      {
+        type: "text",
+        content:
+          "Next.js combines the best of both SSR and SSG, allowing you to choose the rendering method that best fits your application's needs. Embracing Next.js can significantly improve the performance and scalability of your React applications.",
+      },
+    ],
+    date: "August 8, 2024",
+  },
 
   {
     id: "building-responsive-web-applications-with-flexbox",
