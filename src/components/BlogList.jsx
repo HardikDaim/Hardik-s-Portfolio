@@ -49,6 +49,24 @@ const BlogList = () => {
           property="twitter:url"
           content="https://hardik-daim.vercel.app/blog"
         />
+           <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "headline": "Blog - Hardik Daim's Portfolio",
+            "description": "Read the latest blogs by Hardik Daim on web development, software engineering, and more.",
+            "url": "https://hardik-daim.vercel.app/blog",
+            "author": {
+              "@type": "Person",
+              "name": "Hardik Daim"
+            },
+            "datePublished": new Date().toISOString(),
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://hardik-daim.vercel.app/blog"
+            }
+          })}
+        </script>
       </Helmet>
 
       <Header />

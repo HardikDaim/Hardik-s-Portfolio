@@ -30,7 +30,7 @@ const projectsData = [
       "Admin & Seller dashboard for order and inventory management",
       "Payment Transfer from Customer to the Company's Bank Account",
     ],
-    year: 2023,
+    year: 2024,
     role: "Full Stack Developer",
     highlights: [
       "Improved user experience through a clean and responsive design",

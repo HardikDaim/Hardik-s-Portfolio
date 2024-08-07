@@ -20,6 +20,28 @@ const ProjectDetails = () => {
     }, 1500);
   }, []);
 
+  const jsonLd = project ? {
+    "@context": "https://schema.org",
+    "@type": "Project",
+    "name": project.title,
+    "description": project.description,
+    "image": project.image,
+    "url": `https://hardik-daim.vercel.app/project/details/${projectId}`,
+    "additionalType": "https://schema.org/CreativeWork",
+    "sameAs": [
+      project.gitHubLink,
+      project.liveLink
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Hardik Daim"
+    },
+    "datePublished": project.year,
+    "applicationCategory": "WebApplication",
+    "softwareVersion": "1.0",
+    "license": "https://opensource.org/licenses/MIT"
+  } : {};
+
   return (
     <>
      <Helmet>
@@ -33,6 +55,9 @@ const ProjectDetails = () => {
         <meta property="twitter:title" content={project ? `${project.title} - Project Details` : 'Project Details'} />
         <meta property="twitter:description" content={project ? project.description : 'Details of the selected project.'} />
         <meta property="twitter:image" content={project ? project.image : 'https://hardik-daim.vercel.app/android-chrome-512x512.png'} />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
       </Helmet>
       <Header />
       <div className="min-h-screen max-w-7xl px-4 mx-auto flex flex-col items-center justify-start my-10">
