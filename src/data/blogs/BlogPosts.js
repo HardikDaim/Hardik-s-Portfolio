@@ -132,50 +132,51 @@ const blogPosts = [
   //   ],
   //   date: "August 11, 2024",
   // },
-  // {
-  //   id: "introduction-to-graphql-for-efficient-data-fetching",
-  //   title: "Introduction to GraphQL for Efficient Data Fetching",
-  //   excerpt:
-  //     "Discover how GraphQL can streamline your data fetching process by allowing clients to request exactly what they need from your API.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "GraphQL is a query language for APIs that enables clients to request exactly the data they need and nothing more. Unlike REST, which often requires multiple endpoints to fetch related data, GraphQL allows you to combine all your queries into a single request, reducing the number of network calls and improving efficiency.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/k1wv4or8vh1vc0etzpze",
-  //       alt: "GraphQL Introduction",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "With GraphQL, you define your data structure in a schema, and clients query this schema to retrieve the desired data. This means you can request nested data in a single query, leading to more efficient and streamlined data fetching.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "GraphQL also supports real-time data updates through subscriptions. This feature allows clients to receive updates when data changes on the server, providing a seamless and interactive user experience.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/garzepofuz6cyeiiwprd",
-  //       alt: "GraphQL Introduction",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "To get started with GraphQL, you'll need to set up a GraphQL server using libraries like Apollo Server or GraphQL Yoga. On the client side, you can use libraries like Apollo Client or Relay to manage data fetching and caching.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Embracing GraphQL can greatly enhance your API's flexibility and efficiency, making it a powerful tool for modern web development. Understanding how to leverage its capabilities will help you build more responsive and scalable applications.",
-  //     },
-  //   ],
-  //   date: "August 10, 2024",
-  // },
+  
+  {
+    id: "introduction-to-graphql-for-efficient-data-fetching",
+    title: "Introduction to GraphQL for Efficient Data Fetching",
+    excerpt:
+      "Discover how GraphQL can streamline your data fetching process by allowing clients to request exactly what they need from your API.",
+    content: [
+      {
+        type: "text",
+        content:
+          "GraphQL is a query language for APIs that enables clients to request exactly the data they need and nothing more. Unlike REST, which often requires multiple endpoints to fetch related data, GraphQL allows you to combine all your queries into a single request, reducing the number of network calls and improving efficiency.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/k1wv4or8vh1vc0etzpze",
+        alt: "GraphQL Introduction",
+      },
+      {
+        type: "text",
+        content:
+          "With GraphQL, you define your data structure in a schema, and clients query this schema to retrieve the desired data. This means you can request nested data in a single query, leading to more efficient and streamlined data fetching.",
+      },
+      {
+        type: "text",
+        content:
+          "GraphQL also supports real-time data updates through subscriptions. This feature allows clients to receive updates when data changes on the server, providing a seamless and interactive user experience.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/garzepofuz6cyeiiwprd",
+        alt: "GraphQL Introduction",
+      },
+      {
+        type: "text",
+        content:
+          "To get started with GraphQL, you'll need to set up a GraphQL server using libraries like Apollo Server or GraphQL Yoga. On the client side, you can use libraries like Apollo Client or Relay to manage data fetching and caching.",
+      },
+      {
+        type: "text",
+        content:
+          "Embracing GraphQL can greatly enhance your API's flexibility and efficiency, making it a powerful tool for modern web development. Understanding how to leverage its capabilities will help you build more responsive and scalable applications.",
+      },
+    ],
+    date: "August 10, 2024",
+  },
 
   {
     id: "optimizing-web-performance-with-lazy-loading",
