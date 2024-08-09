@@ -177,45 +177,45 @@ const blogPosts = [
   //   date: "August 10, 2024",
   // },
 
-  // {
-  //   id: "optimizing-web-performance-with-lazy-loading",
-  //   title: "Optimizing Web Performance with Lazy Loading",
-  //   excerpt:
-  //     "Learn how to improve your web application's performance by implementing lazy loading techniques to load content efficiently.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Lazy loading is a performance optimization technique that delays the loading of non-critical resources until they are needed. This can significantly enhance the initial loading time of your web application and reduce the overall load on your server.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/t0pt0blitcygshhgguqd",
-  //       alt: "Lazy Loading Overview",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By deferring the loading of images, videos, and other media until they come into the viewport, you can improve the perceived performance of your site. This technique is particularly useful for content-heavy websites with a lot of media or long lists of items. Modern web browsers support native lazy loading for images through the `loading` attribute. By setting `loading='lazy'` on your image elements, you can leverage this built-in feature to achieve lazy loading without additional JavaScript.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "For more complex scenarios, such as lazy loading components or content below the fold, you can use JavaScript libraries like `react-lazyload` or `IntersectionObserver` API. These tools allow you to implement custom lazy loading logic tailored to your application's needs.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/qo2sbxwy0pqf135i2ua4",
-  //       alt: "Lazy Loading Overview",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Implementing lazy loading effectively can lead to faster page load times, reduced bounce rates, and improved user experience. It's an essential technique for optimizing the performance of modern web applications and ensuring that users have a smooth browsing experience.",
-  //     },
-  //   ],
-  //   date: "August 9, 2024",
-  // },
+  {
+    id: "optimizing-web-performance-with-lazy-loading",
+    title: "Optimizing Web Performance with Lazy Loading",
+    excerpt:
+      "Learn how to improve your web application's performance by implementing lazy loading techniques to load content efficiently.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Lazy loading is a performance optimization technique that delays the loading of non-critical resources until they are needed. This can significantly enhance the initial loading time of your web application and reduce the overall load on your server.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/t0pt0blitcygshhgguqd",
+        alt: "Lazy Loading Overview",
+      },
+      {
+        type: "text",
+        content:
+          "By deferring the loading of images, videos, and other media until they come into the viewport, you can improve the perceived performance of your site. This technique is particularly useful for content-heavy websites with a lot of media or long lists of items. Modern web browsers support native lazy loading for images through the `loading` attribute. By setting `loading='lazy'` on your image elements, you can leverage this built-in feature to achieve lazy loading without additional JavaScript.",
+      },
+      {
+        type: "text",
+        content:
+          "For more complex scenarios, such as lazy loading components or content below the fold, you can use JavaScript libraries like `react-lazyload` or `IntersectionObserver` API. These tools allow you to implement custom lazy loading logic tailored to your application's needs.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/qo2sbxwy0pqf135i2ua4",
+        alt: "Lazy Loading Overview",
+      },
+      {
+        type: "text",
+        content:
+          "Implementing lazy loading effectively can lead to faster page load times, reduced bounce rates, and improved user experience. It's an essential technique for optimizing the performance of modern web applications and ensuring that users have a smooth browsing experience.",
+      },
+    ],
+    date: "August 9, 2024",
+  },
 
   {
     id: "getting-started-with-nextjs-for-server-side-rendering",
