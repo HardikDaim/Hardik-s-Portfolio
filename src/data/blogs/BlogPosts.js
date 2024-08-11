@@ -88,50 +88,50 @@ const blogPosts = [
   //   date: "August 12, 2024",
   // },
 
-  // {
-  //   id: "mastering-css-grid-for-complex-layouts",
-  //   title: "Mastering CSS Grid for Complex Layouts",
-  //   excerpt:
-  //     "Explore how CSS Grid can help you create complex, responsive layouts with ease, making it a valuable tool for modern web design.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "CSS Grid is a powerful layout system that enables you to design complex web layouts with a two-dimensional grid. Unlike Flexbox, which operates in a one-dimensional space (either row or column), CSS Grid allows you to create both rows and columns simultaneously, providing more control over your layout.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/xe8tlgkgphsq56tujpyz",
-  //       alt: "CSS Grid Layout",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "With CSS Grid, you can define a grid container with rows and columns and place items within this grid using grid lines. This approach makes it easier to create responsive designs that adapt to different screen sizes and orientations.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "CSS Grid also supports advanced features like grid-template-areas, which allow you to name sections of your grid and place items accordingly. This can make your CSS more readable and maintainable by providing a clear visual representation of your layout.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "To get the most out of CSS Grid, you should familiarize yourself with properties like `grid-template-rows`, `grid-template-columns`, `grid-area`, and `grid-column`. Understanding these properties will enable you to create sophisticated and flexible layouts with minimal effort.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/z8cana0x62ikkdjd0kbb",
-  //       alt: "CSS Grid Layout",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Mastering CSS Grid is essential for modern web design. It provides a robust framework for building complex layouts that are both responsive and visually appealing. By leveraging CSS Grid, you can elevate your design skills and create more dynamic web experiences.",
-  //     },
-  //   ],
-  //   date: "August 11, 2024",
-  // },
+  {
+    id: "mastering-css-grid-for-complex-layouts",
+    title: "Mastering CSS Grid for Complex Layouts",
+    excerpt:
+      "Explore how CSS Grid can help you create complex, responsive layouts with ease, making it a valuable tool for modern web design.",
+    content: [
+      {
+        type: "text",
+        content:
+          "CSS Grid is a powerful layout system that enables you to design complex web layouts with a two-dimensional grid. Unlike Flexbox, which operates in a one-dimensional space (either row or column), CSS Grid allows you to create both rows and columns simultaneously, providing more control over your layout.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/xe8tlgkgphsq56tujpyz",
+        alt: "CSS Grid Layout",
+      },
+      {
+        type: "text",
+        content:
+          "With CSS Grid, you can define a grid container with rows and columns and place items within this grid using grid lines. This approach makes it easier to create responsive designs that adapt to different screen sizes and orientations.",
+      },
+      {
+        type: "text",
+        content:
+          "CSS Grid also supports advanced features like grid-template-areas, which allow you to name sections of your grid and place items accordingly. This can make your CSS more readable and maintainable by providing a clear visual representation of your layout.",
+      },
+      {
+        type: "text",
+        content:
+          "To get the most out of CSS Grid, you should familiarize yourself with properties like `grid-template-rows`, `grid-template-columns`, `grid-area`, and `grid-column`. Understanding these properties will enable you to create sophisticated and flexible layouts with minimal effort.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/z8cana0x62ikkdjd0kbb",
+        alt: "CSS Grid Layout",
+      },
+      {
+        type: "text",
+        content:
+          "Mastering CSS Grid is essential for modern web design. It provides a robust framework for building complex layouts that are both responsive and visually appealing. By leveraging CSS Grid, you can elevate your design skills and create more dynamic web experiences.",
+      },
+    ],
+    date: "August 11, 2024",
+  },
   
   {
     id: "introduction-to-graphql-for-efficient-data-fetching",
