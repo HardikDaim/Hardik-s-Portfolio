@@ -51,48 +51,35 @@ const Home = ({ loader }) => {
           property="twitter:url"
           content="https://hardik-daim.vercel.app/"
         />
-        <script type="application/ld+json">
+         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Home",
-            headline: "Home - Hardik Daim's Portfolio",
-            description:
-              "Portfolio of Hardik Daim, a passionate Software Engineer specializing in building and optimizing web applications.",
-            url: "https://hardik-daim.vercel.app/",
-            author: {
+            "headline": "Home - Hardik Daim's Portfolio",
+            "description": "Portfolio of Hardik Daim, a passionate Software Engineer specializing in building and optimizing web applications.",
+            "url": "https://hardik-daim.vercel.app/",
+            "author": {
               "@type": "Person",
-              name: "Hardik Daim",
+              "name": "Hardik Daim"
             },
-            mainEntityOfPage: {
+            "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://hardik-daim.vercel.app/",
-            },
+              "@id": "https://hardik-daim.vercel.app/"
+            }
           })}
         </script>
       </Helmet>
-      <Header loader={loader} />
       <Suspense fallback={<LoadingAnimation />}>
+        <Header loader={loader} />
         <Start loader={loader} />
-      </Suspense>
-      <Suspense fallback={<LoadingAnimation />}>
         <About loader={loader} projectsRef={projectsRef} />
-      </Suspense>
-      <Suspense fallback={<LoadingAnimation />}>
         <Skills loader={loader} />
-      </Suspense>
-      <Suspense fallback={<LoadingAnimation />}>
         <Experience loader={loader} />
-      </Suspense>
-      <Suspense fallback={<LoadingAnimation />}>
         <Projects loader={loader} ref={projectsRef} />
-      </Suspense>
-      <Suspense fallback={<LoadingAnimation />}>
         <Testimonial loader={loader} />
-      </Suspense>
-      <Suspense fallback={<LoadingAnimation />}>
         <Contact loader={loader} />
+        <Footer loader={loader} />
       </Suspense>
-      <Footer loader={loader} />
     </>
   );
 };
