@@ -51,6 +51,23 @@ const Home = ({ loader }) => {
           property="twitter:url"
           content="https://hardik-daim.vercel.app/"
         />
+         <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Home",
+            "headline": "Home - Hardik Daim's Portfolio",
+            "description": "Portfolio of Hardik Daim, a passionate Software Engineer specializing in building and optimizing web applications.",
+            "url": "https://hardik-daim.vercel.app/",
+            "author": {
+              "@type": "Person",
+              "name": "Hardik Daim"
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://hardik-daim.vercel.app/"
+            }
+          })}
+        </script>
       </Helmet>
       <Suspense fallback={<LoadingAnimation />}>
         <Header loader={loader} />
