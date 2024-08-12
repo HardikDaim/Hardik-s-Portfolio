@@ -405,50 +405,51 @@ const blogPosts = [
   //   ],
   //   date: "August 13, 2024",
   // },
-  // {
-  //   id: "advanced-react-performance-optimization",
-  //   title: "Advanced React Performance Optimization",
-  //   excerpt:
-  //     "Delve into advanced techniques for optimizing the performance of your React applications, ensuring a smooth and responsive user experience.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Performance optimization is crucial for maintaining a smooth and responsive user experience in React applications. Beyond basic techniques, there are several advanced strategies you can employ to fine-tune your app's performance and ensure it runs efficiently under various conditions.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/aonsjmoz72lntatny0mr",
-  //       alt: "React Performance Optimization",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "One advanced technique is memoization. Using `React.memo` and `useMemo`, you can prevent unnecessary re-renders of components and functions by caching their results. This can significantly improve performance for components that receive the same props frequently.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Another important strategy is lazy loading components with `React.lazy` and `Suspense`. This approach allows you to split your code into smaller chunks and load components only when they are needed, reducing the initial load time and improving the overall performance.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "For applications with complex state management, consider using tools like `React Query` or `Redux Toolkit` to handle data fetching and caching. These libraries provide optimized solutions for managing server state and reduce the amount of manual work required for performance tuning.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/vzf7k1w642pg9vbv7lla",
-  //       alt: "React Performance Optimization",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By implementing these advanced performance optimization techniques, you can enhance the responsiveness and efficiency of your React applications. Mastering these strategies will help you deliver a better user experience and maintain high performance as your app scales.",
-  //     },
-  //   ],
-  //   date: "August 12, 2024",
-  // },
+  
+  {
+    id: "advanced-react-performance-optimization",
+    title: "Advanced React Performance Optimization",
+    excerpt:
+      "Delve into advanced techniques for optimizing the performance of your React applications, ensuring a smooth and responsive user experience.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Performance optimization is crucial for maintaining a smooth and responsive user experience in React applications. Beyond basic techniques, there are several advanced strategies you can employ to fine-tune your app's performance and ensure it runs efficiently under various conditions.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/aonsjmoz72lntatny0mr",
+        alt: "React Performance Optimization",
+      },
+      {
+        type: "text",
+        content:
+          "One advanced technique is memoization. Using `React.memo` and `useMemo`, you can prevent unnecessary re-renders of components and functions by caching their results. This can significantly improve performance for components that receive the same props frequently.",
+      },
+      {
+        type: "text",
+        content:
+          "Another important strategy is lazy loading components with `React.lazy` and `Suspense`. This approach allows you to split your code into smaller chunks and load components only when they are needed, reducing the initial load time and improving the overall performance.",
+      },
+      {
+        type: "text",
+        content:
+          "For applications with complex state management, consider using tools like `React Query` or `Redux Toolkit` to handle data fetching and caching. These libraries provide optimized solutions for managing server state and reduce the amount of manual work required for performance tuning.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/vzf7k1w642pg9vbv7lla",
+        alt: "React Performance Optimization",
+      },
+      {
+        type: "text",
+        content:
+          "By implementing these advanced performance optimization techniques, you can enhance the responsiveness and efficiency of your React applications. Mastering these strategies will help you deliver a better user experience and maintain high performance as your app scales.",
+      },
+    ],
+    date: "August 12, 2024",
+  },
 
   {
     id: "mastering-css-grid-for-complex-layouts",
