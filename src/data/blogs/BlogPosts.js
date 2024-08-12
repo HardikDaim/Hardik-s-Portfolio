@@ -361,50 +361,50 @@ const blogPosts = [
   //   date: "August 14, 2024",
   // },
 
-  // {
-  //   id: "effective-debugging-techniques-for-modern-web-apps",
-  //   title: "Effective Debugging Techniques for Modern Web Apps",
-  //   excerpt:
-  //     "Learn about advanced debugging techniques and tools that can help you identify and fix issues in modern web applications more efficiently.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Debugging is a critical skill for developers, and mastering effective techniques can greatly improve your ability to troubleshoot and resolve issues in your web applications. Modern web apps come with a wide range of tools and practices designed to streamline the debugging process.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/sv1edpx1skketdhjqz9g",
-  //       alt: "Effective Debugging Techniques",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "One powerful technique is using browser developer tools. The built-in dev tools in browsers like Chrome and Firefox provide features such as breakpoints, watch expressions, and network monitoring that are essential for diagnosing issues in your code.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Another useful practice is leveraging logging libraries. Tools like `console.log`, `debug`, or more advanced logging frameworks can help you capture detailed information about your application's state and behavior, making it easier to pinpoint problems.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "For React applications, consider using debugging tools like React Developer Tools. This browser extension allows you to inspect the component tree, view props and state, and analyze component performance, providing valuable insights into your React app's behavior.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/lc0bdftc7yaokem4kuuw",
-  //       alt: "Effective Debugging Techniques",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Embracing these debugging techniques and tools will help you tackle issues more efficiently and ensure that your web applications run smoothly. Developing strong debugging skills is essential for maintaining high-quality code and delivering reliable software.",
-  //     },
-  //   ],
-  //   date: "August 13, 2024",
-  // },
+  {
+    id: "effective-debugging-techniques-for-modern-web-apps",
+    title: "Effective Debugging Techniques for Modern Web Apps",
+    excerpt:
+      "Learn about advanced debugging techniques and tools that can help you identify and fix issues in modern web applications more efficiently.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Debugging is a critical skill for developers, and mastering effective techniques can greatly improve your ability to troubleshoot and resolve issues in your web applications. Modern web apps come with a wide range of tools and practices designed to streamline the debugging process.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/sv1edpx1skketdhjqz9g",
+        alt: "Effective Debugging Techniques",
+      },
+      {
+        type: "text",
+        content:
+          "One powerful technique is using browser developer tools. The built-in dev tools in browsers like Chrome and Firefox provide features such as breakpoints, watch expressions, and network monitoring that are essential for diagnosing issues in your code.",
+      },
+      {
+        type: "text",
+        content:
+          "Another useful practice is leveraging logging libraries. Tools like `console.log`, `debug`, or more advanced logging frameworks can help you capture detailed information about your application's state and behavior, making it easier to pinpoint problems.",
+      },
+      {
+        type: "text",
+        content:
+          "For React applications, consider using debugging tools like React Developer Tools. This browser extension allows you to inspect the component tree, view props and state, and analyze component performance, providing valuable insights into your React app's behavior.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/lc0bdftc7yaokem4kuuw",
+        alt: "Effective Debugging Techniques",
+      },
+      {
+        type: "text",
+        content:
+          "Embracing these debugging techniques and tools will help you tackle issues more efficiently and ensure that your web applications run smoothly. Developing strong debugging skills is essential for maintaining high-quality code and delivering reliable software.",
+      },
+    ],
+    date: "August 13, 2024",
+  },
   
   {
     id: "advanced-react-performance-optimization",
