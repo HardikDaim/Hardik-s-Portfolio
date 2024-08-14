@@ -316,50 +316,50 @@ const blogPosts = [
   //   date: "August 15, 2024",
   // },
 
-  // {
-  //   id: "unlocking-the-power-of-recursion-in-programming",
-  //   title: "Unlocking the Power of Recursion in Programming",
-  //   excerpt:
-  //     "Dive into the concept of recursion, a fundamental programming technique that enables elegant solutions to complex problems by breaking them down into simpler subproblems.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Recursion is a technique where a function calls itself in order to solve a problem. It's a powerful concept that can simplify code and make complex problems more manageable by breaking them down into smaller, more manageable subproblems.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/tuc9kwxrrlqunilvlvsb",
-  //       alt: "Recursion Diagram",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "In recursion, the function must have a base case to prevent infinite calls and a recursive case that breaks the problem into smaller instances. Understanding how to properly implement these cases is crucial to avoid common pitfalls like stack overflow.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Recursion is widely used in algorithms such as quicksort, mergesort, and in solving problems like finding the Fibonacci sequence. Mastery of recursion can greatly enhance your problem-solving skills and enable you to tackle complex challenges with ease.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "To excel in recursion, practice implementing different algorithms and solve various problems that require recursive solutions. This will help you understand the nuances of recursion and how to effectively use it in your programming toolkit.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ygc28070m0ejjbt4slgy",
-  //       alt: "Recursion Example",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By mastering recursion, you'll be able to write more efficient and elegant code, making it easier to solve complex problems and improve your overall programming skills.",
-  //     },
-  //   ],
-  //   date: "August 14, 2024",
-  // },
+  {
+    id: "unlocking-the-power-of-recursion-in-programming",
+    title: "Unlocking the Power of Recursion in Programming",
+    excerpt:
+      "Dive into the concept of recursion, a fundamental programming technique that enables elegant solutions to complex problems by breaking them down into simpler subproblems.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Recursion is a technique where a function calls itself in order to solve a problem. It's a powerful concept that can simplify code and make complex problems more manageable by breaking them down into smaller, more manageable subproblems.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/tuc9kwxrrlqunilvlvsb",
+        alt: "Recursion Diagram",
+      },
+      {
+        type: "text",
+        content:
+          "In recursion, the function must have a base case to prevent infinite calls and a recursive case that breaks the problem into smaller instances. Understanding how to properly implement these cases is crucial to avoid common pitfalls like stack overflow.",
+      },
+      {
+        type: "text",
+        content:
+          "Recursion is widely used in algorithms such as quicksort, mergesort, and in solving problems like finding the Fibonacci sequence. Mastery of recursion can greatly enhance your problem-solving skills and enable you to tackle complex challenges with ease.",
+      },
+      {
+        type: "text",
+        content:
+          "To excel in recursion, practice implementing different algorithms and solve various problems that require recursive solutions. This will help you understand the nuances of recursion and how to effectively use it in your programming toolkit.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ygc28070m0ejjbt4slgy",
+        alt: "Recursion Example",
+      },
+      {
+        type: "text",
+        content:
+          "By mastering recursion, you'll be able to write more efficient and elegant code, making it easier to solve complex problems and improve your overall programming skills.",
+      },
+    ],
+    date: "August 14, 2024",
+  },
 
   {
     id: "effective-debugging-techniques-for-modern-web-apps",
