@@ -271,50 +271,50 @@ const blogPosts = [
   //   date: "August 16, 2024",
   // },
 
-  // {
-  //   id: "understanding-big-o-notation-for-algorithm-efficiency",
-  //   title: "Understanding Big O Notation for Algorithm Efficiency",
-  //   excerpt:
-  //     "Explore Big O notation, a mathematical concept used to describe the efficiency of algorithms in terms of time and space complexity. Learn how to analyze and optimize your code for better performance.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Big O notation is a way to describe the performance or complexity of an algorithm. It provides an upper bound on the time or space an algorithm takes as a function of the input size. Understanding Big O notation helps you evaluate how well an algorithm scales and how efficiently it uses resources.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/fh5r20pvlvcfrjlgi0pb",
-  //       alt: "Big O Notation",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Common complexities include O(1) for constant time, O(n) for linear time, and O(n^2) for quadratic time. Analyzing algorithms with Big O notation allows you to compare their efficiency and choose the best one for your needs.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "To improve algorithm efficiency, consider techniques such as optimization, using efficient data structures, and minimizing computational complexity. Understanding how different algorithms perform can guide you in selecting the most suitable one for your problem.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Mastering Big O notation is essential for software developers and engineers as it enables you to write more efficient code and solve problems more effectively. By applying these concepts, you can enhance the performance of your applications.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/xw8czkpb94vnck3dfdoq",
-  //       alt: "Algorithm Complexity",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "With a solid understanding of Big O notation, you'll be equipped to analyze and optimize your algorithms, leading to better performance and more efficient software solutions.",
-  //     },
-  //   ],
-  //   date: "August 15, 2024",
-  // },
+  {
+    id: "understanding-big-o-notation-for-algorithm-efficiency",
+    title: "Understanding Big O Notation for Algorithm Efficiency",
+    excerpt:
+      "Explore Big O notation, a mathematical concept used to describe the efficiency of algorithms in terms of time and space complexity. Learn how to analyze and optimize your code for better performance.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Big O notation is a way to describe the performance or complexity of an algorithm. It provides an upper bound on the time or space an algorithm takes as a function of the input size. Understanding Big O notation helps you evaluate how well an algorithm scales and how efficiently it uses resources.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/fh5r20pvlvcfrjlgi0pb",
+        alt: "Big O Notation",
+      },
+      {
+        type: "text",
+        content:
+          "Common complexities include O(1) for constant time, O(n) for linear time, and O(n^2) for quadratic time. Analyzing algorithms with Big O notation allows you to compare their efficiency and choose the best one for your needs.",
+      },
+      {
+        type: "text",
+        content:
+          "To improve algorithm efficiency, consider techniques such as optimization, using efficient data structures, and minimizing computational complexity. Understanding how different algorithms perform can guide you in selecting the most suitable one for your problem.",
+      },
+      {
+        type: "text",
+        content:
+          "Mastering Big O notation is essential for software developers and engineers as it enables you to write more efficient code and solve problems more effectively. By applying these concepts, you can enhance the performance of your applications.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/xw8czkpb94vnck3dfdoq",
+        alt: "Algorithm Complexity",
+      },
+      {
+        type: "text",
+        content:
+          "With a solid understanding of Big O notation, you'll be equipped to analyze and optimize your algorithms, leading to better performance and more efficient software solutions.",
+      },
+    ],
+    date: "August 15, 2024",
+  },
 
   {
     id: "unlocking-the-power-of-recursion-in-programming",
