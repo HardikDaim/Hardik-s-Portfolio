@@ -181,95 +181,95 @@ const blogPosts = [
   //   date: "August 18, 2024",
   // },
 
-  // {
-  //   id: "exploring-asynchronous-programming-with-promises-and-async-await",
-  //   title: "Exploring Asynchronous Programming with Promises and Async/Await",
-  //   excerpt:
-  //     "Learn about asynchronous programming in JavaScript using Promises and Async/Await. Discover how these features can simplify handling asynchronous operations and improve code readability.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Asynchronous programming allows you to perform tasks without blocking the execution of other code. In JavaScript, Promises and Async/Await are two powerful features that make it easier to handle asynchronous operations such as fetching data from APIs or performing time-consuming tasks.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/mlez28yjghr0jnqvmavz",
-  //       alt: "Promises and Async/Await",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Promises represent a value that may be available now, or in the future, or never. They provide methods like `then` and `catch` to handle resolved or rejected states. Async/Await, on the other hand, is a syntactic sugar over Promises that allows you to write asynchronous code in a more synchronous-looking manner, improving readability and maintainability.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Using Async/Await, you can write code that appears sequential, making it easier to follow and debug. It helps manage asynchronous code without the complexity of chaining multiple `.then` calls and handling errors in multiple places.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Understanding and effectively using Promises and Async/Await will enhance your ability to handle asynchronous operations, leading to more efficient and readable code. These features are essential for modern JavaScript development and can greatly simplify managing asynchronous workflows.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/jbf81kb9gnuc4aulibta",
-  //       alt: "Async/Await Example",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By mastering Promises and Async/Await, you'll be better equipped to handle asynchronous programming tasks and improve the overall quality of your JavaScript code.",
-  //     },
-  //   ],
-  //   date: "August 17, 2024",
-  // },
+  {
+    id: "exploring-asynchronous-programming-with-promises-and-async-await",
+    title: "Exploring Asynchronous Programming with Promises and Async/Await",
+    excerpt:
+      "Learn about asynchronous programming in JavaScript using Promises and Async/Await. Discover how these features can simplify handling asynchronous operations and improve code readability.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Asynchronous programming allows you to perform tasks without blocking the execution of other code. In JavaScript, Promises and Async/Await are two powerful features that make it easier to handle asynchronous operations such as fetching data from APIs or performing time-consuming tasks.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/mlez28yjghr0jnqvmavz",
+        alt: "Promises and Async/Await",
+      },
+      {
+        type: "text",
+        content:
+          "Promises represent a value that may be available now, or in the future, or never. They provide methods like `then` and `catch` to handle resolved or rejected states. Async/Await, on the other hand, is a syntactic sugar over Promises that allows you to write asynchronous code in a more synchronous-looking manner, improving readability and maintainability.",
+      },
+      {
+        type: "text",
+        content:
+          "Using Async/Await, you can write code that appears sequential, making it easier to follow and debug. It helps manage asynchronous code without the complexity of chaining multiple `.then` calls and handling errors in multiple places.",
+      },
+      {
+        type: "text",
+        content:
+          "Understanding and effectively using Promises and Async/Await will enhance your ability to handle asynchronous operations, leading to more efficient and readable code. These features are essential for modern JavaScript development and can greatly simplify managing asynchronous workflows.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/jbf81kb9gnuc4aulibta",
+        alt: "Async/Await Example",
+      },
+      {
+        type: "text",
+        content:
+          "By mastering Promises and Async/Await, you'll be better equipped to handle asynchronous programming tasks and improve the overall quality of your JavaScript code.",
+      },
+    ],
+    date: "August 17, 2024",
+  },
 
-  // {
-  //   id: "the-art-of-memoization-optimizing-recursive-functions",
-  //   title: "The Art of Memoization: Optimizing Recursive Functions",
-  //   excerpt:
-  //     "Discover how memoization can significantly improve the performance of recursive functions by caching results and avoiding redundant calculations.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Memoization is an optimization technique used to speed up recursive functions by storing previously computed results. Instead of recalculating results for the same inputs multiple times, memoization caches these results, reducing the time complexity of the function.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/rmnwguehfvxkvraaztcl",
-  //       alt: "Memoization Diagram",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "To implement memoization, you can use data structures like hash tables or dictionaries to store function results. When the function is called with the same inputs, it checks the cache first, returning the cached result if available, otherwise computing and storing it.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Memoization is particularly useful in problems like dynamic programming and recursive algorithms where the same subproblems are solved multiple times. By reducing redundant computations, memoization can significantly enhance performance.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Practical examples of memoization include algorithms like the Fibonacci sequence, where caching previously computed values can transform an exponential-time algorithm into a linear-time one. Understanding and applying memoization can lead to more efficient code and faster execution.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/drsxjcuy42vck6zw63ua",
-  //       alt: "Memoization Example",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By mastering memoization, you'll be able to optimize your recursive functions, reduce computation time, and build more efficient algorithms.",
-  //     },
-  //   ],
-  //   date: "August 16, 2024",
-  // },
+  {
+    id: "the-art-of-memoization-optimizing-recursive-functions",
+    title: "The Art of Memoization: Optimizing Recursive Functions",
+    excerpt:
+      "Discover how memoization can significantly improve the performance of recursive functions by caching results and avoiding redundant calculations.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Memoization is an optimization technique used to speed up recursive functions by storing previously computed results. Instead of recalculating results for the same inputs multiple times, memoization caches these results, reducing the time complexity of the function.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/rmnwguehfvxkvraaztcl",
+        alt: "Memoization Diagram",
+      },
+      {
+        type: "text",
+        content:
+          "To implement memoization, you can use data structures like hash tables or dictionaries to store function results. When the function is called with the same inputs, it checks the cache first, returning the cached result if available, otherwise computing and storing it.",
+      },
+      {
+        type: "text",
+        content:
+          "Memoization is particularly useful in problems like dynamic programming and recursive algorithms where the same subproblems are solved multiple times. By reducing redundant computations, memoization can significantly enhance performance.",
+      },
+      {
+        type: "text",
+        content:
+          "Practical examples of memoization include algorithms like the Fibonacci sequence, where caching previously computed values can transform an exponential-time algorithm into a linear-time one. Understanding and applying memoization can lead to more efficient code and faster execution.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/drsxjcuy42vck6zw63ua",
+        alt: "Memoization Example",
+      },
+      {
+        type: "text",
+        content:
+          "By mastering memoization, you'll be able to optimize your recursive functions, reduce computation time, and build more efficient algorithms.",
+      },
+    ],
+    date: "August 16, 2024",
+  },
 
   {
     id: "understanding-big-o-notation-for-algorithm-efficiency",
