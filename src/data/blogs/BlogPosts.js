@@ -135,51 +135,51 @@ const blogPosts = [
   //   date: "August 19, 2024",
   // },
 
-  // {
-  //   id: "understanding-graph-algorithms-dfs-vs-bfs",
-  //   title:
-  //     "Understanding Graph Algorithms: Depth-First Search (DFS) vs. Breadth-First Search (BFS)",
-  //   excerpt:
-  //     "Compare Depth-First Search (DFS) and Breadth-First Search (BFS) algorithms, two fundamental techniques for traversing and exploring graphs. Learn their differences, use cases, and applications.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Depth-First Search (DFS) and Breadth-First Search (BFS) are two key algorithms for traversing graphs. DFS explores as far as possible along a branch before backtracking, while BFS explores all neighbors at the present depth level before moving on to nodes at the next depth level.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/lnjwqjwhz83htafpj0ik",
-  //       alt: "DFS vs BFS Diagram",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "DFS is implemented using a stack or recursion and is useful for tasks like pathfinding in mazes or solving puzzles. It tends to use more memory due to its deep recursion, but can be more efficient for certain types of problems.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "BFS, implemented using a queue, is ideal for finding the shortest path in an unweighted graph and is used in algorithms like the shortest path algorithm. It explores all nodes at the present depth level before moving deeper, ensuring the shortest path is found.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Both algorithms have their strengths and weaknesses. DFS can be more efficient for certain problems but may not always find the shortest path. BFS guarantees the shortest path in an unweighted graph but can be slower and more memory-intensive.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ypqr7vxulyequcwmbszr",
-  //       alt: "Graph Algorithms Example",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Understanding the differences between DFS and BFS helps you choose the right algorithm for your specific problem, improving the efficiency and effectiveness of your graph-related tasks.",
-  //     },
-  //   ],
-  //   date: "August 18, 2024",
-  // },
+  {
+    id: "understanding-graph-algorithms-dfs-vs-bfs",
+    title:
+      "Understanding Graph Algorithms: Depth-First Search (DFS) vs. Breadth-First Search (BFS)",
+    excerpt:
+      "Compare Depth-First Search (DFS) and Breadth-First Search (BFS) algorithms, two fundamental techniques for traversing and exploring graphs. Learn their differences, use cases, and applications.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Depth-First Search (DFS) and Breadth-First Search (BFS) are two key algorithms for traversing graphs. DFS explores as far as possible along a branch before backtracking, while BFS explores all neighbors at the present depth level before moving on to nodes at the next depth level.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/lnjwqjwhz83htafpj0ik",
+        alt: "DFS vs BFS Diagram",
+      },
+      {
+        type: "text",
+        content:
+          "DFS is implemented using a stack or recursion and is useful for tasks like pathfinding in mazes or solving puzzles. It tends to use more memory due to its deep recursion, but can be more efficient for certain types of problems.",
+      },
+      {
+        type: "text",
+        content:
+          "BFS, implemented using a queue, is ideal for finding the shortest path in an unweighted graph and is used in algorithms like the shortest path algorithm. It explores all nodes at the present depth level before moving deeper, ensuring the shortest path is found.",
+      },
+      {
+        type: "text",
+        content:
+          "Both algorithms have their strengths and weaknesses. DFS can be more efficient for certain problems but may not always find the shortest path. BFS guarantees the shortest path in an unweighted graph but can be slower and more memory-intensive.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ypqr7vxulyequcwmbszr",
+        alt: "Graph Algorithms Example",
+      },
+      {
+        type: "text",
+        content:
+          "Understanding the differences between DFS and BFS helps you choose the right algorithm for your specific problem, improving the efficiency and effectiveness of your graph-related tasks.",
+      },
+    ],
+    date: "August 18, 2024",
+  },
 
   {
     id: "exploring-asynchronous-programming-with-promises-and-async-await",
