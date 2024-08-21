@@ -1,139 +1,139 @@
 const blogPosts = [
-  // {
-  //   id: "effective-error-handling-in-nodejs",
-  //   title: "Effective Error Handling in Node.js: Best Practices and Strategies",
-  //   excerpt:
-  //     "Learn best practices and strategies for effective error handling in Node.js applications. Discover how to manage errors gracefully and improve the reliability of your code.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Error handling is a crucial aspect of building robust Node.js applications. Properly managing errors ensures your application remains stable and provides a better user experience by handling unexpected situations gracefully.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/bfjizokwz8hxganuehr4",
-  //       alt: "Error Handling in Node.js",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "In Node.js, errors can be synchronous or asynchronous. For synchronous errors, using `try...catch` blocks helps handle exceptions effectively. For asynchronous errors, utilizing error-first callbacks, Promises, and `async/await` ensures proper error management.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Implementing centralized error handling through middleware, logging errors with tools like Winston or Morgan, and providing meaningful error messages can significantly improve your application's reliability and maintainability.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Understanding and applying best practices in error handling will help you build more resilient Node.js applications and enhance the overall quality and user experience of your software.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ge3kmh2hqkfj3tp9zqi7",
-  //       alt: "Error Handling Strategies",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By mastering error handling techniques in Node.js, you can ensure that your applications handle issues gracefully and maintain smooth operation even in the face of unexpected errors.",
-  //     },
-  //   ],
-  //   date: "August 21, 2024",
-  // },
+  {
+    id: "effective-error-handling-in-nodejs",
+    title: "Effective Error Handling in Node.js: Best Practices and Strategies",
+    excerpt:
+      "Learn best practices and strategies for effective error handling in Node.js applications. Discover how to manage errors gracefully and improve the reliability of your code.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Error handling is a crucial aspect of building robust Node.js applications. Properly managing errors ensures your application remains stable and provides a better user experience by handling unexpected situations gracefully.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/bfjizokwz8hxganuehr4",
+        alt: "Error Handling in Node.js",
+      },
+      {
+        type: "text",
+        content:
+          "In Node.js, errors can be synchronous or asynchronous. For synchronous errors, using `try...catch` blocks helps handle exceptions effectively. For asynchronous errors, utilizing error-first callbacks, Promises, and `async/await` ensures proper error management.",
+      },
+      {
+        type: "text",
+        content:
+          "Implementing centralized error handling through middleware, logging errors with tools like Winston or Morgan, and providing meaningful error messages can significantly improve your application's reliability and maintainability.",
+      },
+      {
+        type: "text",
+        content:
+          "Understanding and applying best practices in error handling will help you build more resilient Node.js applications and enhance the overall quality and user experience of your software.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ge3kmh2hqkfj3tp9zqi7",
+        alt: "Error Handling Strategies",
+      },
+      {
+        type: "text",
+        content:
+          "By mastering error handling techniques in Node.js, you can ensure that your applications handle issues gracefully and maintain smooth operation even in the face of unexpected errors.",
+      },
+    ],
+    date: "August 21, 2024",
+  },
 
-  // {
-  //   id: "the-evolution-of-javascript-from-es5-to-es2024",
-  //   title: "The Evolution of JavaScript: From ES5 to ES2024",
-  //   excerpt:
-  //     "Explore the evolution of JavaScript from ES5 to ES2024. Discover key features and improvements introduced in each version and how they impact modern web development.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "JavaScript has undergone significant evolution over the years, with each new version introducing powerful features and enhancements. Starting from ECMAScript 5 (ES5) to the latest ECMAScript 2024 (ES2024), the language has seen numerous improvements that streamline development and enhance performance.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/cpfogwq0e4v2mu4kt1zm",
-  //       alt: "JavaScript Evolution",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "ES5, released in 2009, brought features like strict mode, JSON support, and improved array methods. ES6 (2015) introduced significant changes such as classes, modules, arrow functions, and template literals, revolutionizing JavaScript development.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Subsequent versions, including ES7 to ES2024, continued to enhance the language with features like async/await, optional chaining, and the latest addition of logical assignment operators and top-level await. These updates address modern development needs and improve code readability and functionality.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Staying up-to-date with JavaScript's evolution helps developers leverage new features, write more efficient code, and adopt best practices. Understanding the history and advancements of JavaScript is essential for mastering the language and adapting to its ever-changing landscape.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/sx4elgomuyvoxnj1sf0n",
-  //       alt: "ES2024 Features",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By exploring the evolution of JavaScript, you'll gain insights into the language's growth and be better equipped to use its latest features and improvements in your projects.",
-  //     },
-  //   ],
-  //   date: "August 20, 2024",
-  // },
+  {
+    id: "the-evolution-of-javascript-from-es5-to-es2024",
+    title: "The Evolution of JavaScript: From ES5 to ES2024",
+    excerpt:
+      "Explore the evolution of JavaScript from ES5 to ES2024. Discover key features and improvements introduced in each version and how they impact modern web development.",
+    content: [
+      {
+        type: "text",
+        content:
+          "JavaScript has undergone significant evolution over the years, with each new version introducing powerful features and enhancements. Starting from ECMAScript 5 (ES5) to the latest ECMAScript 2024 (ES2024), the language has seen numerous improvements that streamline development and enhance performance.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/cpfogwq0e4v2mu4kt1zm",
+        alt: "JavaScript Evolution",
+      },
+      {
+        type: "text",
+        content:
+          "ES5, released in 2009, brought features like strict mode, JSON support, and improved array methods. ES6 (2015) introduced significant changes such as classes, modules, arrow functions, and template literals, revolutionizing JavaScript development.",
+      },
+      {
+        type: "text",
+        content:
+          "Subsequent versions, including ES7 to ES2024, continued to enhance the language with features like async/await, optional chaining, and the latest addition of logical assignment operators and top-level await. These updates address modern development needs and improve code readability and functionality.",
+      },
+      {
+        type: "text",
+        content:
+          "Staying up-to-date with JavaScript's evolution helps developers leverage new features, write more efficient code, and adopt best practices. Understanding the history and advancements of JavaScript is essential for mastering the language and adapting to its ever-changing landscape.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/sx4elgomuyvoxnj1sf0n",
+        alt: "ES2024 Features",
+      },
+      {
+        type: "text",
+        content:
+          "By exploring the evolution of JavaScript, you'll gain insights into the language's growth and be better equipped to use its latest features and improvements in your projects.",
+      },
+    ],
+    date: "August 20, 2024",
+  },
 
-  // {
-  //   id: "mastering-javascript-closures",
-  //   title:
-  //     "Mastering JavaScript Closures: A Deep Dive into Scope and Function Memory",
-  //   excerpt:
-  //     "Explore JavaScript closures, a powerful feature that enables functions to retain access to their lexical scope even after they have finished executing. Learn how closures work and their practical applications.",
-  //   content: [
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Closures are a fundamental concept in JavaScript that allow functions to retain access to variables from their lexical scope even after the function has executed. This enables functions to remember and access their outer variables, creating a powerful tool for managing state and data.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/b6w7jlt7z0ulwse6izez",
-  //       alt: "JavaScript Closures",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Closures are created when a function is defined within another function, capturing its outer function's variables. This allows the inner function to access and manipulate these variables, even after the outer function has completed execution.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "Closures have many practical applications, including data encapsulation, creating private variables, and maintaining state in asynchronous operations. They are often used in callback functions, event handlers, and module patterns.",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "To master closures, practice creating and using them in various scenarios. Understanding closures will help you write more efficient and modular code, manage state effectively, and solve complex problems with ease.",
-  //     },
-  //     {
-  //       type: "image",
-  //       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ro2gwnoqmt3ew6dgf4n7",
-  //       alt: "Closures Example",
-  //     },
-  //     {
-  //       type: "text",
-  //       content:
-  //         "By mastering closures, you'll gain a deeper understanding of JavaScript's scope and function memory, leading to more powerful and flexible code.",
-  //     },
-  //   ],
-  //   date: "August 19, 2024",
-  // },
+  {
+    id: "mastering-javascript-closures",
+    title:
+      "Mastering JavaScript Closures: A Deep Dive into Scope and Function Memory",
+    excerpt:
+      "Explore JavaScript closures, a powerful feature that enables functions to retain access to their lexical scope even after they have finished executing. Learn how closures work and their practical applications.",
+    content: [
+      {
+        type: "text",
+        content:
+          "Closures are a fundamental concept in JavaScript that allow functions to retain access to variables from their lexical scope even after the function has executed. This enables functions to remember and access their outer variables, creating a powerful tool for managing state and data.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/b6w7jlt7z0ulwse6izez",
+        alt: "JavaScript Closures",
+      },
+      {
+        type: "text",
+        content:
+          "Closures are created when a function is defined within another function, capturing its outer function's variables. This allows the inner function to access and manipulate these variables, even after the outer function has completed execution.",
+      },
+      {
+        type: "text",
+        content:
+          "Closures have many practical applications, including data encapsulation, creating private variables, and maintaining state in asynchronous operations. They are often used in callback functions, event handlers, and module patterns.",
+      },
+      {
+        type: "text",
+        content:
+          "To master closures, practice creating and using them in various scenarios. Understanding closures will help you write more efficient and modular code, manage state effectively, and solve complex problems with ease.",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/ro2gwnoqmt3ew6dgf4n7",
+        alt: "Closures Example",
+      },
+      {
+        type: "text",
+        content:
+          "By mastering closures, you'll gain a deeper understanding of JavaScript's scope and function memory, leading to more powerful and flexible code.",
+      },
+    ],
+    date: "August 19, 2024",
+  },
 
   {
     id: "understanding-graph-algorithms-dfs-vs-bfs",
