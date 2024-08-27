@@ -46,6 +46,7 @@ const ProjectDetails = () => {
     <>
      <Helmet>
         <title>{project ? `${project.title} - Project Details` : 'Project Details'}</title>
+        <link rel="canonical" href={`https://hardik-daim.vercel.app/project/details/${projectId}`} />
         <meta name="description" content={project ? project.description : 'Details of the selected project.'} />
         <meta property="og:title" content={project ? `${project.title} - Project Details` : 'Project Details'} />
         <meta property="og:description" content={project ? project.description : 'Details of the selected project.'} />

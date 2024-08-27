@@ -28,6 +28,7 @@ const BlogPost = () => {
     <>
       <Helmet>
         <title>{title}</title>
+        <link rel="canonical" href={`https://hardik-daim.vercel.app/${id}`} />
         <meta name="description" content={description} />
         <meta
           name="keywords"

@@ -15,6 +15,7 @@ const BlogList = () => {
     <>
       <Helmet>
         <title>Blog - Hardik Daim's Portfolio</title>
+        <link rel="canonical" href="https://hardik-daim.vercel.app/blog" />
         <meta
           name="description"
           content="Read the latest blogs by Hardik Daim on web development, software engineering, and more."

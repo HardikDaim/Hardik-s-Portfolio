@@ -9,6 +9,7 @@ const FifthSem = () => {
     <>
       <Helmet>
         <title>5th Semester Study Material - B.Tech CSE</title>
+        <link rel="canonical" href="https://hardik-daim.vercel.app/cse/5-sem-exam-material" />
         <meta name="description" content="Access 5th semester study materials for B.Tech CSE, including Computer Networks, DBMS, Software Engineering, and more." />
         <meta name="keywords" content="CGC ASSIGN, CGC Assignments, 5th semester, B.Tech CSE, study materials, Computer Networks, DBMS, Software Engineering, Hardik Daim, Hardik's Portfolio" />
       </Helmet>
