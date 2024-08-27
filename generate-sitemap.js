@@ -20,6 +20,11 @@ const generateSitemap = async () => {
   sitemap += `    <priority>1.0</priority>\n`;
   sitemap += `  </url>\n`;
 
+  sitemap += `  <url>\n`;
+  sitemap += `    <loc>https://hardik-daim.vercel.app/cse/5-sem-exam-material</loc>\n`;
+  sitemap += `    <priority>1.0</priority>\n`;
+  sitemap += `  </url>\n`;
+
   
   sitemap += `  <url>\n`;
   sitemap += `    <loc>https://hardik-daim.vercel.app/blog</loc>\n`;
