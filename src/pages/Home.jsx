@@ -17,7 +17,7 @@ const Home = ({ loader }) => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Home | My Awesome Site</title>
         <meta
           name="description"
@@ -54,7 +54,7 @@ const Home = ({ loader }) => {
          <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Home",
+            "@type": "WebSite",
             "headline": "Home - Hardik Daim's Portfolio",
             "description": "Portfolio of Hardik Daim, a passionate Software Engineer specializing in building and optimizing web applications.",
             "url": "https://hardik-daim.vercel.app/",
@@ -68,7 +68,7 @@ const Home = ({ loader }) => {
             }
           })}
         </script>
-      </Helmet>
+      </Helmet> */}
       <Suspense fallback={<LoadingAnimation />}>
         <Header loader={loader} />
         <Start loader={loader} />

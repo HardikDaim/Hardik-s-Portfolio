@@ -10,7 +10,7 @@ const FifthSem = () => {
       <Helmet>
         <title>5th Semester Study Material - B.Tech CSE</title>
         <meta name="description" content="Access 5th semester study materials for B.Tech CSE, including Computer Networks, DBMS, Software Engineering, and more." />
-        <meta name="keywords" content="5th semester, B.Tech CSE, study materials, Computer Networks, DBMS, Software Engineering, Hardik Daim, Hardik's Portfolio" />
+        <meta name="keywords" content="CGC ASSIGN, CGC Assignments, 5th semester, B.Tech CSE, study materials, Computer Networks, DBMS, Software Engineering, Hardik Daim, Hardik's Portfolio" />
       </Helmet>
       <Header />
       <div className="p-4 min-h-screen max-w-7xl mx-auto">
