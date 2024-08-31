@@ -58,6 +58,10 @@ const FifthSem = () => {
               link: "https://drive.google.com/drive/folders/16R98ur8cM98AaYo8PRJ6BAnzUo7nGN0m?usp=share_link",
             },
             {
+              name: "ERP",
+              link: "https://drive.google.com/drive/folders/1PiCJiST1ja3r0UcToyLNIZpWoP8tmtBY?usp=share_link",
+            },
+            {
               name: "COI",
               link: "https://drive.google.com/drive/folders/13J_-edqSaBq_zdMmbLCSvLr7-55fcizm?usp=sharing",
             },
