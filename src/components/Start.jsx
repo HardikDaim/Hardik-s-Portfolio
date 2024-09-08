@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaInstagram,
-  FaFacebook,
-} from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import "../App.css"
+import "../App.css";
 
 const Start = ({ loader }) => {
   const data = {
-    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/znksvzznuxtiytbovktt",
+    image:
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/lcqyj9cxaeusrapojavg",
     name: "Hardik Daim",
     title: "Software Engineer",
     linkedIn: "https://www.linkedin.com/in/hardik-daim-ab0b07251",
@@ -42,7 +38,7 @@ const Start = ({ loader }) => {
           <motion.img
             src={data.image}
             alt="Hardik Daim"
-            className="w-72 h-72 rounded-full object-cover mb-4"
+            className="w-72 h-72 rounded-full border-4 border-blue-500 object-cover mb-4"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -73,7 +69,11 @@ const Start = ({ loader }) => {
               transition={{ duration: 0.5 }}
               className="text-5xl text-orange-400 hover:text-orange-500"
             >
-              <img className="h-[48px] w-[48px]" src="/leetcode.png" alt="LeetCode" />
+              <img
+                className="h-[48px] w-[48px]"
+                src="/leetcode.png"
+                alt="LeetCode"
+              />
             </motion.a>
             <motion.a
               href={data.linkedIn}
