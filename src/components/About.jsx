@@ -16,7 +16,7 @@ const About = ({ loader, projectsRef }) => {
         deliver exceptional user experiences.
       `,
     resumeLink:
-      "https://drive.google.com/file/d/1_uU71J3Q1mHUI-xYkNmasHR2_4t0RF-2/view?usp=share_link",
+      "https://drive.google.com/file/d/1GoKqo25VS6XEpEZX6toRA7RPRtnRqTFX/view?usp=sharing",
     image: about,
   };
 
