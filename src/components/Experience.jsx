@@ -6,6 +6,18 @@ import 'react-loading-skeleton/dist/skeleton.css';
 const Experience = ({ loader }) => {
   const experienceData = [
     {
+      role: 'Core Technical Member',
+      company: 'Google Developers Group (GDG)',
+      duration: 'Sep 2024 - Present',
+      responsibilities: [
+        'Collaborated with a global community of developers to promote innovative technology solutions.',
+        'Led and participated in hands-on workshops, hackathons, and tech talks focused on Google Cloud, Machine Learning, and Web Development tools.',
+        'Organized and contributed to events that engaged developers in building scalable applications.',
+        'Mentored peers and new developers to foster community growth and knowledge sharing.',
+        'Worked closely with fellow tech enthusiasts to solve real-world problems using Google’s latest technologies.'
+      ],
+    },
+    {
       role: 'Software Engineer Intern',
       company: 'Hirer.co',
       duration: 'Mar 2024 - May 2024',
@@ -17,21 +29,7 @@ const Experience = ({ loader }) => {
         'Optimized web applications for maximum speed and scalability.',
         'Worked closely with UX designers to create user-friendly experiences.',
       ],
-    },
-    {
-        role: 'Computer Science Student',
-        company: 'Chandigarh Group of Colleges, Landran, Mohali',
-        duration: 'Aug 2022 - Present',
-        responsibilities: [
-          'Completed coursework in algorithms, data structures, and software engineering.',
-          'Worked on various projects using programming languages like Java, Python, and JavaScript.',
-          'Participated in coding competitions and hackathons.',
-          'Collaborated with peers on group projects to develop software applications.',
-          'Conducted research and wrote papers on emerging technologies.',
-          'Attended workshops and seminars to enhance technical skills.',
-          'Assisted professors with lab sessions and tutoring junior students.',
-        ],
-      },
+    }
   ];
 
   return (
