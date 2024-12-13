@@ -101,7 +101,7 @@ const ProjectDetails = () => {
             transition={{ duration: 0.6 }}
           >
             <motion.h1
-              className="text-2xl md:text-4xl font-bold mb-4 text-gray-800 dark:text-gray-200"
+              className="text-2xl md:text-4xl text-center font-bold mb-4 text-gray-800 dark:text-gray-200"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}

@@ -61,7 +61,7 @@ const About = ({ loader, projectsRef }) => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             />
-            <div className="text-2xl py-10">
+            <div className="text-md md:text-2xl py-10">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

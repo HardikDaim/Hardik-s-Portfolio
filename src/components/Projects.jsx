@@ -41,11 +41,11 @@ const Projects = forwardRef(({ loader }, ref) => {
             >
               Projects
             </motion.h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-4">
               {projectsData.map((project) => (
                 <motion.div
                   key={project.id}
-                  className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 flex flex-col items-center"
+                  className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 flex flex-col justify-between items-center"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}

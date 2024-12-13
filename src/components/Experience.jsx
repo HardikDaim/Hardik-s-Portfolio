@@ -6,6 +6,15 @@ import 'react-loading-skeleton/dist/skeleton.css';
 const Experience = ({ loader }) => {
   const experienceData = [
     {
+      role: 'Software Engineer Intern',
+      company: 'VRV Security',
+      duration: 'Dec 2024 - June 2025 (OnGoing)',
+      responsibilities: [
+        'As it is an ongoing internship i will update it after completion.',
+      ],
+    }
+    ,
+    {
       role: 'Core Technical Member',
       company: 'Google Developers Group (GDG)',
       duration: 'Sep 2024 - Present',
@@ -18,7 +27,7 @@ const Experience = ({ loader }) => {
       ],
     },
     {
-      role: 'Software Engineer Intern',
+      role: 'Full Stack Developer Intern',
       company: 'Hirer.co',
       duration: 'Mar 2024 - May 2024',
       responsibilities: [
@@ -42,7 +51,7 @@ const Experience = ({ loader }) => {
       >
         {loader ? <Skeleton width={400}/>: 'Experience'}
       </motion.h2>
-      <div className="grid grid-cols-1 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 gap-8 max-w-7xl mx-4">
         {loader ? (
           <>
               {Array.from({length: experienceData.length}).map((_, index) => (
@@ -63,7 +72,7 @@ const Experience = ({ loader }) => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">{job.role}</h3>
+              <h3 className="text-2xl text-center md:text-start font-semibold mb-2 text-gray-800 dark:text-gray-200">{job.role}</h3>
               <h4 className="text-lg text-gray-600 dark:text-gray-400">{job.company}</h4>
               <p className="text-md text-gray-500 dark:text-gray-300 mb-4">{job.duration}</p>
               <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300">

@@ -2,10 +2,39 @@
 
 const projectsData = [
   {
+    id: "ottflix-your-ultimate-streaming-platform",
+    title: "OTTflix - Cloud Streaming Platform",
+    description:
+      "An advanced cloud streaming platform built with Next.js, GraphQL, Node.js, and Express.js.",
+    image:
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/bztuqjxnlzdbflckmk4g",
+    liveLink: "https://ottflix.vercel.app",
+    gitHubLink: "https://github.com/HardikDaim/OTTflix-frontend",
+    technologies: [
+      "NextJs",
+      "GraphQl",
+      "Cloudinary",
+      "ExpressJs",
+      "NodeJs",
+      "MongoDB",
+      "Tailwind CSS",
+    ],
+    features: [
+      "Developed Custom Made Video Streaming Player for Amazing Video Playing Experience.",
+      "Implemented GraphQL for smoother fetching of Video Data using single API endpoint from the Cloud Storage.",
+      "Integrated UI/UX best practices for seamless User Experience & SMS-Based user Authentication."
+    ],
+    year: 2024,
+    role: "Full Stack Developer",
+    highlights: [
+      "Go to the Live Link by clicking on See Live Project button to checkout the Web App.",
+    ],
+  },
+  {
     id: "ecommerce-platform",
     title: "E-commerce Platform",
     description:
-      "A full-featured e-commerce platform built with React, Redux, Node.js, and MongoDB. It includes a product catalog, shopping cart, user authentication, and a comprehensive seller & admin dashboard.",
+      "A full-featured e-commerce platform built with React, Redux, Node.js, and MongoDB.",
     image:
       "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/yz0d5wkxg2afocbj1z8d",
     liveLink: "https://shop-cart-ten-chi.vercel.app",
@@ -47,7 +76,7 @@ const projectsData = [
     id: "portfolio-website",
     title: "Portfolio Website",
     description:
-      "A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills. It features a modern design with interactive elements and a dynamic projects section.",
+      "A personal portfolio website built with React and Tailwind CSS to showcase my projects and skills.",
     image:
       "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/ltazhaa6en21uhyenf3l",
     liveLink: "https://hardik-daim.vercel.app",
@@ -83,8 +112,9 @@ const projectsData = [
     id: "realtime-chat-application",
     title: "Real-time Chat Application",
     description:
-      "A real-time chat application using Socket.IO, Node.js, and React for seamless communication. It supports multiple chat rooms, private messaging, and notifications within the E-Commerce Platform.",
-    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/pjsdafz9ugcwo07mudzc", 
+      "A real-time chat application using Socket.IO, Node.js, and React for seamless communication.",
+    image:
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/pjsdafz9ugcwo07mudzc",
     liveLink: "https://shop-cart-ten-chi.vercel.app",
     gitHubLink: "https://github.com/HardikDaim/ShopCart-Frontend",
     technologies: ["React", "Node.js", "Socket.IO", "Express.js"],
@@ -118,8 +148,9 @@ const projectsData = [
     id: "social-media-app",
     title: "Social Media App",
     description:
-      "A Social Media App built using React, Redux, MongoDB, and Express.js where users can share photos, follow friends, and like or comment on posts.",
-    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/dwobzir08nipq0sngve9",
+      "A Social Media App built using React, Redux, MongoDB, and Express.js where users can connect.",
+    image:
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/dwobzir08nipq0sngve9",
     liveLink: "https://github.com/HardikDaim/SocialMedia-Frontend",
     gitHubLink: "https://github.com/HardikDaim/SocialMedia-Frontend",
     technologies: ["React", "Redux", "MongoDB", "Express.js"],
@@ -133,7 +164,7 @@ const projectsData = [
       "Private messaging between users",
       "Content moderation tools for reporting and blocking users",
       "Personalized feed based on user interests and interactions",
-      "Responsive design for mobile and desktop devices"
+      "Responsive design for mobile and desktop devices",
     ],
     year: 2023,
     role: "Full Stack Developer",
@@ -147,16 +178,16 @@ const projectsData = [
       "Integrated image uploading and processing functionality",
       "Developed comprehensive testing strategies for both backend and frontend",
       "Facilitated deployment with CI/CD pipelines for streamlined updates",
-      "Incorporated user feedback to continuously improve the application"
+      "Incorporated user feedback to continuously improve the application",
     ],
-  }
-,  
+  },
   {
     id: "task-manager",
     title: "Task Manager",
     description:
-      "A task management tool built with React and Redux, featuring drag-and-drop functionality, task prioritization, and deadline tracking.",
-    image: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/gqwpk52umdg2tb1jpvru",
+      "A task management tool built with React and Redux, task prioritization, and deadline tracking.",
+    image:
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/gqwpk52umdg2tb1jpvru",
     liveLink: "https://github.com/HardikDaim/",
     gitHubLink: "https://github.com/HardikDaim/",
     technologies: ["React", "Redux"],
