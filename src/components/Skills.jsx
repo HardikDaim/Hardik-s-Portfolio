@@ -5,7 +5,10 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 const Skills = ({ loader }) => {
   const skillsData = [
+    { name: "Next.js", level: "Expert" },
     { name: "React.js", level: "Expert" },
+    { name: "GraphQL", level: "Expert" },
+    { name: "Web Sockets", level: "Expert" },
     { name: "Redux", level: "Advanced" },
     { name: "Node.js", level: "Advanced" },
     { name: "Express.js", level: "Advanced" },
