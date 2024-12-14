@@ -9,7 +9,8 @@ import Home from "./pages/Home.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import BlogList from "./components/BlogList.jsx";
 import BlogPost from "./components/BlogPost.jsx";
-import FifthSem from "./components/FifthSem.jsx";
+// import FifthSem from "./components/FifthSem.jsx";
+import NotExist from "./pages/NotExist.jsx";
 
 const App = () => {
   const theme = useSelector(selectTheme);
@@ -53,7 +54,8 @@ const App = () => {
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/project/details/:projectId" element={<ProjectDetails />} />
-          <Route path="/cse/5-sem-exam-material" element={<FifthSem />} />
+          {/* <Route path="/cse/5-sem-exam-material" element={<FifthSem />} /> */}
+          <Route path="*" exact element={<NotExist loader={loader} />} />
         </Routes>
         <Toaster
           position="top-center"
