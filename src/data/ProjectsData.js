@@ -22,7 +22,7 @@ const projectsData = [
     features: [
       "Developed Custom Made Video Streaming Player for Amazing Video Playing Experience.",
       "Implemented GraphQL for smoother fetching of Video Data using single API endpoint from the Cloud Storage.",
-      "Integrated UI/UX best practices for seamless User Experience & SMS-Based user Authentication."
+      "Integrated UI/UX best practices for seamless User Experience & SMS-Based user Authentication.",
     ],
     year: 2024,
     role: "Full Stack Developer",
@@ -70,6 +70,33 @@ const projectsData = [
       "Designed a responsive UI with Tailwind CSS",
       "Implemented real-time order updates with Socket.IO",
       "Developed a secure authentication system using JWT and Bcrypt",
+    ],
+  },
+  {
+    id: "Flight-Booking-Mobile-App",
+    title: "Flight Booking - Mobile App",
+    description:
+      "An Amazing Flight Booking App built with React Native, Expo, Native Wind, and Supabase.",
+    image:
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/z9mwyru1a2m6ef1etvmo",
+    liveLink: "https://github.com/HardikDaim/Flight-Booking-Mobile-App",
+    gitHubLink: "https://github.com/HardikDaim/Flight-Booking-Mobile-App",
+    technologies: [
+      "React Native",
+      "Expo",
+      "Native Wind",
+      "Supabase",
+      "REST API's",
+    ],
+    features: [
+      "Developed platform for users to search suitable flights. ",
+      "Ensured compatibility across Android and iOS platforms with a single codebase powered by Expo",
+      "Implemented search feature for efficient flight discoveries.",
+    ],
+    year: 2025,
+    role: "Full Stack Developer",
+    highlights: [
+      "Go to the Github Link by clicking on View code on GitHub as the live Project demo is not available yet.",
     ],
   },
   {
@@ -179,29 +206,6 @@ const projectsData = [
       "Developed comprehensive testing strategies for both backend and frontend",
       "Facilitated deployment with CI/CD pipelines for streamlined updates",
       "Incorporated user feedback to continuously improve the application",
-    ],
-  },
-  {
-    id: "task-manager",
-    title: "Task Manager",
-    description:
-      "A task management tool built with React and Redux, task prioritization, and deadline tracking.",
-    image:
-      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/gqwpk52umdg2tb1jpvru",
-    liveLink: "https://github.com/HardikDaim/",
-    gitHubLink: "https://github.com/HardikDaim/",
-    technologies: ["React", "Redux"],
-    features: [
-      "Drag-and-drop task management",
-      "Task prioritization and deadline tracking",
-      "Customizable task views and filters",
-    ],
-    year: 2022,
-    role: "Frontend Developer",
-    highlights: [
-      "Implemented drag-and-drop functionality with React DnD",
-      "Created a clean and intuitive UI with Tailwind CSS",
-      "Optimized state management with Redux",
     ],
   },
 ];

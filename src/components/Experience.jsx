@@ -6,15 +6,6 @@ import 'react-loading-skeleton/dist/skeleton.css';
 const Experience = ({ loader }) => {
   const experienceData = [
     {
-      role: 'Software Engineer Intern',
-      company: 'VRV Security',
-      duration: 'Dec 2024 - June 2025 (OnGoing)',
-      responsibilities: [
-        'As it is an ongoing internship i will update it after completion.',
-      ],
-    }
-    ,
-    {
       role: 'Core Technical Member',
       company: 'Google Developers Group (GDG)',
       duration: 'Sep 2024 - Present',
