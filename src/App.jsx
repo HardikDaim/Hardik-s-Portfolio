@@ -11,6 +11,7 @@ import BlogList from "./components/BlogList.jsx";
 import BlogPost from "./components/BlogPost.jsx";
 // import FifthSem from "./components/FifthSem.jsx";
 import NotExist from "./pages/NotExist.jsx";
+import StudyMaterial from "./components/StudyMaterial.jsx";
 
 const App = () => {
   const theme = useSelector(selectTheme);
@@ -54,7 +55,7 @@ const App = () => {
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/project/details/:projectId" element={<ProjectDetails />} />
-          {/* <Route path="/cse/5-sem-exam-material" element={<FifthSem />} /> */}
+          <Route path="/btech/cse/study-material" element={<StudyMaterial />} />
           <Route path="*" exact element={<NotExist loader={loader} />} />
         </Routes>
         <Toaster
