@@ -59,14 +59,7 @@ const Header = ({ loader }) => {
                   className=" text-xs relative font-semibold text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg flex items-center"
                 >
                   Blogs
-                  <motion.span
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="absolute -top-2 -right-4 inline-flex items-center justify-center w-10 h-5 text-xs font-bold text-white  bg-red-500 rounded-full"
-                  >
-                    New
-                  </motion.span>
+                  
                 </Link>
                 <ThemeToggle />
               </div>
