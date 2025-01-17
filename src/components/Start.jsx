@@ -19,7 +19,7 @@ const Start = ({ loader }) => {
   };
 
   return (
-    <div className="min-h-screen max-w-7xl mx-auto flex flex-col items-center justify-center">
+    <div className="max-w-7xl mx-auto flex flex-col items-center justify-center my-20">
       {loader ? (
         <div className="flex flex-col items-center">
           <Skeleton circle={true} height={300} width={300} />
@@ -52,7 +52,7 @@ const Start = ({ loader }) => {
             {data.name}
           </motion.h1>
           <motion.p
-            className="text-xl"
+            className="text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

@@ -27,7 +27,7 @@ const About = ({ loader, projectsRef }) => {
   };
 
   return (
-    <div className="min-h-screen max-w-7xl px-2 mx-auto flex flex-col items-center justify-start">
+    <div className="max-w-7xl px-2 mx-auto flex flex-col items-center justify-start mb-10 md:mb-20">
       {loader ? (
         <div className="w-full flex flex-col items-center">
           <Skeleton height={50} width={300} className="my-6" />
@@ -45,14 +45,14 @@ const About = ({ loader, projectsRef }) => {
       ) : (
         <>
           <motion.h2
-            className="text-5xl md:text-7xl font-bold"
+            className="text-3xl md:text-5xl font-bold"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             {data.title}
           </motion.h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 pt-20 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 pt-6 gap-8">
             <motion.img
               src={data.image}
               alt="About Me"
@@ -61,18 +61,20 @@ const About = ({ loader, projectsRef }) => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             />
-            <div className="text-md md:text-2xl py-10">
+            <div className="text-sm md:text-lg py-10">
+            <div className="flex items-center justify-center text-center gap-20">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-justify"
+              
               >
                 {data.description}
               </motion.p>
+              </div>
               <div className="flex items-center justify-center gap-20">
                 <motion.button
-                  className="text-lg md:text-2xl py-4 my-10 px-2 border-4 border-blue-500 bg-blue-500 rounded-xl text-white"
+                  className="text-sm md:text-2xl py-4 mt-10 px-2 border-4 border-blue-500 bg-blue-500 rounded-xl text-white"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
@@ -81,7 +83,7 @@ const About = ({ loader, projectsRef }) => {
                   My Projects
                 </motion.button>
                 <motion.button
-                  className="text-lg md:text-2xl py-4 my-10 px-2 border-4 border-blue-500 rounded-xl text-gray-800 dark:text-white"
+                  className="text-sm md:text-2xl py-4 mt-10 px-2 border-4 border-blue-500 rounded-xl text-gray-800 dark:text-white"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}

@@ -8,31 +8,31 @@ import { FaLock } from "react-icons/fa6";
 const StudyMaterial = () => {
   const semesters = [
     {
-      name: "1st Sem",
+      name: "1st Semester",
       link: "https://drive.google.com/drive/folders/1lLTbw6lO_JzqYCUGvGjt95ON2teu7Zsd?usp=share_link",
     },
     {
-      name: "2nd Sem",
+      name: "2nd Semester",
       link: "https://drive.google.com/drive/folders/1NKlfT02MOmTAdbaoIVWcrOYsppg8pzFQ?usp=share_link",
     },
     {
-      name: "3rd Sem",
+      name: "3rd Semester",
       link: "https://drive.google.com/drive/folders/1vvw9aTvyqHzvNjA2yoaXRdOYXlZLiKrU?usp=share_link",
     },
     {
-      name: "4th Sem",
+      name: "4th Semester",
       link: "https://drive.google.com/drive/folders/1vsuaec9ME8DokDiflJAc3M8NItaqWsAU?usp=share_link",
     },
     {
-      name: "5th Sem",
+      name: "5th Semester",
       link: "https://drive.google.com/drive/folders/1lkndLFKT4Uz0kksW7XLMnW_D1dmt35Wr?usp=share_link",
     },
     {
-      name: "6th Sem",
+      name: "6th Semester",
       link: "",
     },
     {
-      name: "7th Sem",
+      name: "7th Semester",
       link: "",
     },
   ];
@@ -71,7 +71,7 @@ const StudyMaterial = () => {
       <Header />
       <div className="p-4 min-h-screen max-w-7xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-7xl flex justify-center font-bold mt-8"
+          className="text-3xl md:text-7xl flex justify-center font-bold md:mt-8"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

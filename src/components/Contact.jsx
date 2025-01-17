@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Skeleton from "react-loading-skeleton";
 import toast from "react-hot-toast";
 
-
 const Contact = ({ loader }) => {
   const [input, setInput] = useState({
     name: "",
@@ -21,13 +20,13 @@ const Contact = ({ loader }) => {
       name: "",
       email: "",
       message: "",
-    })
+    });
   };
 
   return (
-    <div className="min-h-screen max-w-7xl px-2 mx-auto flex flex-col items-center justify-start mb-20 md:mb-0">
+    <div className="px-2 mx-auto flex flex-col items-center justify-start mb-10 md:mb-20">
       <motion.h2
-        className="text-5xl md:text-7xl font-bold mb-10 text-gray-800 dark:text-gray-200"
+        className="text-3xl md:text-5xl font-bold mb-10 text-gray-800 dark:text-gray-200"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -41,7 +40,7 @@ const Contact = ({ loader }) => {
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
-                className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+                className="block text-gray-700 dark:text-gray-300 text-xs font-bold mb-2"
                 htmlFor="name"
               >
                 Name
@@ -51,7 +50,7 @@ const Contact = ({ loader }) => {
                 onChange={handleChange}
                 value={input.name}
                 name="name"
-                className="shadow appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
                 id="name"
                 type="text"
                 placeholder="Your name"
@@ -59,7 +58,7 @@ const Contact = ({ loader }) => {
             </div>
             <div className="mb-4">
               <label
-                className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+                className="block text-gray-700 dark:text-gray-300 text-xs font-bold mb-2"
                 htmlFor="email"
               >
                 Email
@@ -69,7 +68,7 @@ const Contact = ({ loader }) => {
                 onChange={handleChange}
                 value={input.email}
                 name="email"
-                className="shadow appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
                 id="email"
                 type="email"
                 placeholder="Your email"
@@ -77,7 +76,7 @@ const Contact = ({ loader }) => {
             </div>
             <div className="mb-4">
               <label
-                className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+                className="block text-gray-700 dark:text-gray-300 text-xs font-bold mb-2"
                 htmlFor="message"
               >
                 Message
@@ -87,7 +86,7 @@ const Contact = ({ loader }) => {
                 onChange={handleChange}
                 value={input.message}
                 name="message"
-                className="shadow appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full p-2 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
                 id="message"
                 placeholder="Your message"
                 rows={6}
@@ -95,7 +94,7 @@ const Contact = ({ loader }) => {
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="text-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
                 Send

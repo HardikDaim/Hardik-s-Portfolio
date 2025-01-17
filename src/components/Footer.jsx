@@ -16,13 +16,13 @@ const Footer = ({ loader }) => {
           {loader ? (
             <Skeleton width={200} height={20} />
           ) : (
-            <p className="text-sm text-black dark:text-white">
+            <p className="text-xs text-black dark:text-white">
               © {new Date().getFullYear()} Hardik Daim. All rights reserved.
             </p>
           )}
         </div>
 
-        <div className="text-center md:text-right">
+        <div className="text-xs text-center md:text-right">
           {loader ? (
             <div className="flex flex-col md:flex-row gap-0 justify-center">
               <Skeleton width={150} height={20} className="mb-2" />

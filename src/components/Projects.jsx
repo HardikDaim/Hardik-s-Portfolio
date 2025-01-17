@@ -13,7 +13,7 @@ const Projects = forwardRef(({ loader }, ref) => {
     <>
       <div
         ref={ref}
-        className="min-h-screen max-w-7xl px-2 mx-auto flex flex-col items-center justify-start mb-20 md:mt-20"
+        className="max-w-7xl px-2 mx-auto flex flex-col items-center justify-start mb-10 md:mb-20"
       >
         {loader ? (
           <>
@@ -34,13 +34,14 @@ const Projects = forwardRef(({ loader }, ref) => {
         ) : (
           <>
             <motion.h2
-              className="text-5xl md:text-7xl font-bold mb-10 text-gray-800 dark:text-gray-200"
+              className="text-3xl md:text-5xl font-bold mb-10 text-gray-800 dark:text-gray-200"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
               Projects
             </motion.h2>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-4">
               {projectsData.map((project) => (
                 <motion.div
@@ -50,10 +51,10 @@ const Projects = forwardRef(({ loader }, ref) => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">
                     {project.title}
                   </h3>
-                  <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
+                  <p className="text-sm md:text-lg text-gray-600 dark:text-gray-400 mb-4">
                     {project.description}
                   </p>
                   <button
