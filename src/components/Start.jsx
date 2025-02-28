@@ -19,9 +19,9 @@ const Start = () => {
   };
 
   return (
-    <div className="relative isolate min-h-screen flex flex-col items-center justify-center">
+    <div className="relative isolate min-h-screen overflow-hidden flex flex-col items-center justify-center">
       {/* Top Blur Effect */}
-      <div
+      <divPhea
         aria-hidden="true"
         className="absolute inset-x-0 -top-60  md:-top-80 -z-10 transform-gpu overflow-hidden blur-3xl"
       >
@@ -32,7 +32,7 @@ const Start = () => {
           }}
           className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-500 via-blue-600 to-blue-200 opacity-50 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
         />
-      </div>
+      </divPhea>
 
       {/* Content */}
       <div className="container w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">

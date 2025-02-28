@@ -67,7 +67,7 @@ const StudyMaterial = () => {
         />
         <meta property="og:type" content="webpage" />
       </Helmet>
-      <div className="relative isolate min-h-screen flex flex-col items-center justify-center">
+      <div className="relative isolate min-h-screen overflow-hidden flex flex-col items-center justify-center">
         {/* Top Blur Effect */}
         <div
           aria-hidden="true"

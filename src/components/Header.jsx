@@ -16,7 +16,7 @@ const Header = ({ loader }) => {
   // Add scroll event listener to detect if the user has scrolled
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 30) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);

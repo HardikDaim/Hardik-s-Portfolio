@@ -20,7 +20,7 @@ const Skills = ({ loader }) => {
   ];
 
   return (
-    <div className="relative isolate flex flex-col items-center justify-center">
+    <div className="relative isolate overflow-hidden flex flex-col items-center justify-center">
       <div className="container px-2 mx-auto flex flex-col items-center justify-start mb-20">
         <>
           <motion.h2
