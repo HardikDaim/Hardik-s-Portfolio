@@ -4,7 +4,6 @@ import Skeleton from "react-loading-skeleton";
 import { motion } from "framer-motion";
 import "react-loading-skeleton/dist/skeleton.css";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import projectsData from "../data/ProjectsData";
 import { Helmet } from "react-helmet-async";
 
@@ -60,7 +59,6 @@ const ProjectDetails = () => {
           {JSON.stringify(jsonLd)}
         </script>
       </Helmet>
-      <Header />
       <div className="min-h-screen max-w-7xl px-4 mx-auto flex flex-col items-center justify-start my-10">
         {loader ? (
           <div className="shadow-lg rounded-lg p-6 flex flex-col items-center ">

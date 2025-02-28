@@ -8,7 +8,6 @@ const Experience = lazy(() => import("../components/Experience"));
 const Projects = lazy(() => import("../components/Projects"));
 const Contact = lazy(() => import("../components/Contact"));
 const Footer = lazy(() => import("../components/Footer"));
-const Header = lazy(() => import("../components/Header"));
 const Testimonial = lazy(() => import("../components/Testimonial"));
 import { Helmet } from "react-helmet-async";
 
@@ -70,7 +69,6 @@ const Home = ({ loader }) => {
         </script>
       </Helmet> */}
       <Suspense fallback={<LoadingAnimation />}>
-        <Header loader={loader} />
         <Start loader={loader} />
         <About loader={loader} projectsRef={projectsRef} />
         <Skills loader={loader} />

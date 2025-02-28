@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import blogPosts from "../data/blogs/BlogPosts";
-import Header from "./Header";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -70,7 +69,6 @@ const BlogList = () => {
         </script>
       </Helmet>
 
-      <Header />
       <div className="p-4 min-h-screen max-w-7xl mx-auto">
         <motion.h2
           className="text-5xl md:text-7xl flex justify-center font-bold mb-4"

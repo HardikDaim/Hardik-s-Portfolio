@@ -20,23 +20,8 @@ const Skills = ({ loader }) => {
   ];
 
   return (
-    <div className="max-w-7xl px-2 mx-auto flex flex-col items-center justify-start mb-20">
-      {loader ? (
-        <>
-          <Skeleton width={300} height={60} className="mb-10" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {Array.from({ length: skillsData.length }).map((_, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 flex flex-col items-center"
-              >
-                <Skeleton width={200} height={40} className="mb-2" />
-                <Skeleton width={150} height={30} />
-              </div>
-            ))}
-          </div>
-        </>
-      ) : (
+    <div className="relative isolate flex flex-col items-center justify-center">
+      <div className="container px-2 mx-auto flex flex-col items-center justify-start mb-20">
         <>
           <motion.h2
             className="text-3xl md:text-5xl font-bold mb-10 text-gray-800 dark:text-gray-200"
@@ -46,7 +31,7 @@ const Skills = ({ loader }) => {
           >
             Skills
           </motion.h2>
-          <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 container mx-auto">
             {skillsData.map((skill, index) => (
               <motion.div
                 key={index}
@@ -65,7 +50,20 @@ const Skills = ({ loader }) => {
             ))}
           </div>
         </>
-      )}
+      </div>
+      {/* Bottom Blur Effect */}
+      <div
+        aria-hidden="true"
+        className="absolute left-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl"
+      >
+        <div
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-blue-500 via-blue-600 to-blue-200 opacity-50 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+        />
+      </div>
     </div>
   );
 };

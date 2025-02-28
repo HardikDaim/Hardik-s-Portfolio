@@ -12,6 +12,7 @@ import BlogPost from "./components/BlogPost.jsx";
 // import FifthSem from "./components/FifthSem.jsx";
 import NotExist from "./pages/NotExist.jsx";
 import StudyMaterial from "./components/StudyMaterial.jsx";
+import Header from "./components/Header.jsx";
 
 const App = () => {
   const theme = useSelector(selectTheme);
@@ -50,6 +51,7 @@ const App = () => {
     >
       <Router>
         <ScrollToTop />
+        <Header />
         <Routes>
           <Route path="/" exact element={<Home loader={loader} />} />
           <Route path="/blog" element={<BlogList />} />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaHome } from "react-icons/fa"; // Example icon
 import ThemeToggle from "./ThemeToggle";
@@ -9,28 +9,41 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 const Header = ({ loader }) => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const isStudyMaterialPage = location.pathname === "/btech/cse/study-material";
+
+  // Add scroll event listener to detect if the user has scrolled
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      {!isStudyMaterialPage && (
-        <div className="bg-white dark:bg-black ">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex justify-center items-center pt-2">
-              <h2 className="text-xs md:text-sm border border-gray-400 dark:border-gray-600 p-1 rounded-md">
-                Access free PTU Notes & PYQs from{" "}
-                <span className="text-blue-600 dark:text-blue-400 hover:underline">
-                  <Link to="/btech/cse/study-material">here</Link>
-                </span>
-              </h2>
-            </div>
-          </div>
-        </div>
-      )}
-
-      <div className="border-b shadow-lg bg-white dark:bg-black sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-center px-2 pb-4 pt-2">
+      {/* Header */}
+      <div
+        className={`sticky w-full top-0 z-50 ${
+          isScrolled
+            ? "bg-white dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-3xl border-b border-gray-200 dark:border-gray-700"
+            : ""
+        }`}
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4">
+            {/* Logo and Home Link */}
             <div className="flex items-center">
               {loader ? (
                 <div className="flex items-center space-x-2">
@@ -46,11 +59,14 @@ const Header = ({ loader }) => {
                   onClick={() => navigate("/")}
                 >
                   <FaHome className="text-2xl text-blue-500" />
-                  <h2 className="text-2xl font-bold">Hardik</h2>
+                  <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+                    Hardik
+                  </h2>
                 </motion.div>
               )}
             </div>
 
+            {/* Navigation Links and Theme Toggle */}
             {loader ? (
               <div className="flex items-center justify-center gap-4 md:gap-8">
                 <Skeleton height={35} width={80} />
@@ -60,7 +76,7 @@ const Header = ({ loader }) => {
               <div className="flex items-center justify-center gap-2 md:gap-4">
                 <Link
                   to="/blog"
-                  className=" text-xs relative font-semibold text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg flex items-center"
+                  className="text-xs md:text-sm font-semibold text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg flex items-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                 >
                   Blogs
                 </Link>

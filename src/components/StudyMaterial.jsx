@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
@@ -68,7 +67,6 @@ const StudyMaterial = () => {
         />
         <meta property="og:type" content="webpage" />
       </Helmet>
-      <Header />
       <div className="p-4 min-h-screen max-w-7xl mx-auto">
         <motion.h2
           className="text-3xl md:text-7xl flex justify-center font-bold md:mt-8"

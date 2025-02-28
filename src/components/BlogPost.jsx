@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import blogPosts from "../data/blogs/BlogPosts";
-import Header from "./Header";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -45,8 +44,6 @@ const BlogPost = () => {
         <meta property="twitter:image" content={imageUrl} />
         <meta property="twitter:url" content={url} />
       </Helmet>
-
-      <Header />
       <div className="p-4 min-h-screen max-w-7xl mx-auto">
         {post ? (
           <>
