@@ -53,7 +53,7 @@ const App = () => {
         <ScrollToTop />
         <Header />
         <Routes>
-          <Route path="/" exact element={<Home loader={loader} />} />
+          <Route path="/" exact element={<Home />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/project/details/:projectId" element={<ProjectDetails />} />

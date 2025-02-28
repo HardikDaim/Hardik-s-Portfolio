@@ -3,7 +3,7 @@ import Skeleton from "react-loading-skeleton";
 
 const Footer = ({ loader }) => {
   return (
-    <footer className="bg-gray-200 dark:bg-gray-800 text-white py-6">
+    <footer className="bg-white dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-3xl border-t border-gray-200 dark:border-gray-700 py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start">
         <div className="text-center md:text-left mb-4 md:mb-0">
           {loader ? (

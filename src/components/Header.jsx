@@ -76,7 +76,7 @@ const Header = ({ loader }) => {
               <div className="flex items-center justify-center gap-2 md:gap-4">
                 <Link
                   to="/blog"
-                  className="text-xs md:text-sm font-semibold text-gray-800 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg flex items-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                  className="text-xs md:text-sm bg-gray-200 text-black hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 font-semibold px-4 py-2 rounded-lg  flex items-center transition-colors duration-300"
                 >
                   Blogs
                 </Link>

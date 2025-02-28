@@ -11,7 +11,7 @@ const Footer = lazy(() => import("../components/Footer"));
 const Testimonial = lazy(() => import("../components/Testimonial"));
 import { Helmet } from "react-helmet-async";
 
-const Home = ({ loader }) => {
+const Home = () => {
   const projectsRef = useRef(null);
 
   return (
@@ -69,14 +69,14 @@ const Home = ({ loader }) => {
         </script>
       </Helmet> */}
       <Suspense fallback={<LoadingAnimation />}>
-        <Start loader={loader} />
-        <About loader={loader} projectsRef={projectsRef} />
-        <Skills loader={loader} />
-        <Experience loader={loader} />
-        <Projects loader={loader} ref={projectsRef} />
-        <Testimonial loader={loader} />
-        <Contact loader={loader} />
-        <Footer loader={loader} />
+        <Start />
+        <About projectsRef={projectsRef} />
+        <Skills />
+        <Experience />
+        <Projects ref={projectsRef} />
+        <Testimonial />
+        <Contact />
+        <Footer />
       </Suspense>
     </>
   );
