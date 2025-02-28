@@ -19,7 +19,7 @@ const Start = () => {
   };
 
   return (
-    <div className="relative isolate min-h-screen overflow-hidden flex flex-col items-center justify-center">
+    <div className="relative isolate min-h-screen flex flex-col items-center justify-center">
       {/* Top Blur Effect */}
       <divPhea
         aria-hidden="true"
