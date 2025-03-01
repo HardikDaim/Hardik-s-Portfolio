@@ -1,4 +1,3 @@
-// About.jsx
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Skeleton from "react-loading-skeleton";
@@ -9,12 +8,11 @@ const About = ({ projectsRef }) => {
   const data = {
     title: "About Me!",
     description: `
-        Hello! I’m Hardik Daim, a passionate Software Engineer with a strong
-        background in building and optimizing web applications. With
-        experience in React.js, Redux, Node.js, Express.js, and MongoDB, I
-        specialize in creating dynamic and responsive applications that
-        deliver exceptional user experiences.
-      `,
+    Hello! I’m Hardik Daim, a passionate and results-driven <strong>Software Engineer</strong> with expertise in <strong>Full Stack Development</strong> and <strong>Web Development</strong>. 
+    I specialize in building scalable, high-performance web applications using modern technologies like <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, 
+    and <strong>MongoDB</strong>. With a strong foundation in <strong>JavaScript</strong>, <strong>TypeScript</strong>, and <strong>RESTful APIs</strong>, I thrive on solving complex problems and delivering 
+    seamless user experiences.
+  `,
     resumeLink:
       "https://drive.google.com/file/d/1DeTws5zsXO27LdfUUYOheZjQaZXDwIgD/view?usp=share_link",
     image: about,
@@ -44,7 +42,7 @@ const About = ({ projectsRef }) => {
       <div className="container px-2 mx-auto flex flex-col items-center justify-start mb-10 md:mb-20">
         <>
           <motion.h2
-            className="text-3xl md:text-5xl font-bold mb-4"
+            className="text-3xl md:text-5xl font-bold mb-4 text-gray-800 dark:text-gray-200"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -55,7 +53,7 @@ const About = ({ projectsRef }) => {
             <motion.img
               src={data.image}
               alt="About Me"
-              className="rounded-xl"
+              className="rounded-xl w-full  mx-auto"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
@@ -66,13 +64,13 @@ const About = ({ projectsRef }) => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                >
-                  {data.description}
-                </motion.p>
+                  className="text-gray-700 dark:text-gray-300"
+                  dangerouslySetInnerHTML={{ __html: data.description }} // Render HTML
+                />
               </div>
               <div className="flex items-center justify-center gap-20">
                 <motion.button
-                  className="text-sm md:text-2xl py-4 mt-10 px-2 border-4 border-blue-500 bg-blue-500 rounded-xl text-white"
+                  className="text-sm md:text-2xl py-4 mt-10 px-2 border-4 border-blue-500 bg-blue-500 rounded-xl text-white hover:bg-blue-600 transition-colors"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
@@ -81,7 +79,7 @@ const About = ({ projectsRef }) => {
                   My Projects
                 </motion.button>
                 <motion.button
-                  className="text-sm md:text-2xl py-4 mt-10 px-2 border-4 border-blue-500 rounded-xl text-gray-800 dark:text-white"
+                  className="text-sm md:text-2xl py-4 mt-10 px-2 border-4 border-blue-500 rounded-xl text-gray-800 dark:text-white hover:bg-blue-500 hover:text-white transition-colors"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}

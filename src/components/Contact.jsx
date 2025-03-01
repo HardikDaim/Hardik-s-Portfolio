@@ -36,7 +36,7 @@ const Contact = ({ loader }) => {
       {loader ? (
         <Skeleton height={400} width={800} />
       ) : (
-        <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 w-full max-w-2xl">
+        <div className="border rounded-2xl md:rounded-3xl shadow-lg p-6 w-full max-w-2xl">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
@@ -50,7 +50,7 @@ const Contact = ({ loader }) => {
                 onChange={handleChange}
                 value={input.name}
                 name="name"
-                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded-md w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
                 id="name"
                 type="text"
                 placeholder="Your name"
@@ -68,7 +68,7 @@ const Contact = ({ loader }) => {
                 onChange={handleChange}
                 value={input.email}
                 name="email"
-                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded-md w-full py-2 px-3 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
                 id="email"
                 type="email"
                 placeholder="Your email"
@@ -86,7 +86,7 @@ const Contact = ({ loader }) => {
                 onChange={handleChange}
                 value={input.message}
                 name="message"
-                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded w-full p-2 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow text-xs appearance-none border-2 focus:border-blue-700 hover:border-blue-500  rounded-md w-full p-2 text-gray-700 dark:text-gray-300 dark:bg-gray-900 leading-tight focus:outline-none focus:shadow-outline"
                 id="message"
                 placeholder="Your message"
                 rows={6}
@@ -94,7 +94,7 @@ const Contact = ({ loader }) => {
             </div>
             <div className="flex items-center justify-center">
               <button
-                className="text-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="text-xs bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline"
                 type="submit"
               >
                 Send

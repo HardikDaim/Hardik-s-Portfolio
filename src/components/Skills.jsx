@@ -2,21 +2,71 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
+import { GlowingEffect } from "./ui/glowing-effect";
 
 const Skills = ({ loader }) => {
   const skillsData = [
-    { name: "Next.js", level: "Expert" },
-    { name: "React.js", level: "Expert" },
-    { name: "GraphQL", level: "Expert" },
-    { name: "Web Sockets", level: "Expert" },
-    { name: "Redux", level: "Advanced" },
-    { name: "Node.js", level: "Advanced" },
-    { name: "Express.js", level: "Advanced" },
-    { name: "SQL/MongoDB", level: "Intermediate" },
-    { name: "JavaScript", level: "Expert" },
-    { name: "HTML & CSS", level: "Expert" },
-    { name: "Tailwind CSS", level: "Advanced" },
-    { name: "Java Programming", level: "Advanced" },
+    {
+      name: "Next.js",
+      level: "Expert",
+      icon: <Box className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "React.js",
+      level: "Expert",
+      icon: <Settings className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "GraphQL",
+      level: "Expert",
+      icon: <Lock className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "Web Sockets",
+      level: "Expert",
+      icon: <Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "Redux",
+      level: "Advanced",
+      icon: <Search className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "Node.js",
+      level: "Advanced",
+      icon: <Box className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "Express.js",
+      level: "Advanced",
+      icon: <Settings className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "SQL/MongoDB",
+      level: "Intermediate",
+      icon: <Lock className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "JavaScript",
+      level: "Expert",
+      icon: <Sparkles className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "HTML & CSS",
+      level: "Expert",
+      icon: <Search className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "Tailwind CSS",
+      level: "Advanced",
+      icon: <Box className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
+    {
+      name: "Java Programming",
+      level: "Advanced",
+      icon: <Settings className="h-4 w-4 text-black dark:text-neutral-400" />,
+    },
   ];
 
   return (
@@ -31,30 +81,23 @@ const Skills = ({ loader }) => {
           >
             Skills
           </motion.h2>
-          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 container mx-auto">
+          <ul className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {skillsData.map((skill, index) => (
-              <motion.div
+              <GridItem
                 key={index}
-                className="bg-white dark:bg-gray-800 shadow-lg rounded-lg px-1 py-2 md:p-6 flex flex-col items-center"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                <h3 className="text-xs md:text-2xl text-center font-semibold mb-2 text-gray-800 dark:text-gray-200">
-                  {skill.name}
-                </h3>
-                <p className="text-xs md:text-lg text-gray-600 dark:text-gray-400">
-                  {skill.level}
-                </p>
-              </motion.div>
+                area=""
+                icon={skill.icon}
+                title={skill.name}
+                description={skill.level}
+              />
             ))}
-          </div>
+          </ul>
         </>
       </div>
       {/* Bottom Blur Effect */}
       <div
         aria-hidden="true"
-        className="absolute left-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl"
+        className="absolute -left-40 md:left-0 bottom-80 md:bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl"
       >
         <div
           style={{
@@ -65,6 +108,37 @@ const Skills = ({ loader }) => {
         />
       </div>
     </div>
+  );
+};
+
+const GridItem = ({ area, icon, title, description }) => {
+  return (
+    <li className={`min-h-[14rem] list-none ${area}`}>
+      <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3 shadow-lg">
+        <GlowingEffect
+          spread={100}
+          glow={true}
+          disabled={false}
+          proximity={64}
+          inactiveZone={0.01}
+        />
+        <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl border-0.75 p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] md:p-6">
+          <div className="relative flex flex-1 flex-col justify-between gap-3">
+            <div className="w-fit rounded-lg border border-gray-600 p-2">
+              {icon}
+            </div>
+            <div className="space-y-3">
+              <h3 className="pt-0.5 text-xl/[1.375rem] font-semibold font-sans -tracking-4 md:text-2xl/[1.875rem] text-balance text-black dark:text-white">
+                {title}
+              </h3>
+              <h2 className="[&_b]:md:font-semibold [&_strong]:md:font-semibold font-sans text-sm/[1.125rem] md:text-base/[1.375rem] text-black dark:text-neutral-400">
+                {description}
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
   );
 };
 
