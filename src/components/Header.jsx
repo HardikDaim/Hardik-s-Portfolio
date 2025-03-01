@@ -4,7 +4,9 @@ import { FaHome } from "react-icons/fa"; // Example icon
 import ThemeToggle from "./ThemeToggle";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { FaBlog } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { PiExam } from "react-icons/pi";
 
 const Header = ({ loader }) => {
   const navigate = useNavigate();
@@ -74,11 +76,19 @@ const Header = ({ loader }) => {
               </div>
             ) : (
               <div className="flex items-center justify-center gap-2 md:gap-4">
+                <div className="relative bg-gray-200 w-full text-black hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 p-2 rounded-full focus:outline-none transition-colors duration-300">
+                  {/* Red Dot */}
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full" />
+                  {/* Button */}
+                  <Link to="/btech/cse/study-material" className="">
+                    <PiExam size={20} />
+                  </Link>
+                </div>
                 <Link
                   to="/blog"
-                  className="text-xs md:text-sm bg-gray-200 text-black hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 px-4 py-2 rounded-lg  flex items-center transition-colors duration-300"
+                  className="bg-gray-200 text-black hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 p-2 rounded-full focus:outline-none transition-colors duration-300"
                 >
-                  Blogs
+                  <FaBlog size={20} />
                 </Link>
                 <ThemeToggle />
               </div>

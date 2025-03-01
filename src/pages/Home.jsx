@@ -70,13 +70,19 @@ const Home = () => {
         </script>
       </Helmet> */}
       <Suspense fallback={<LoadingAnimation />}>
+        <Start />
         <BackgroundBeamsWithCollision>
-          <Start />
+          <About projectsRef={projectsRef} />
         </BackgroundBeamsWithCollision>
-        <About projectsRef={projectsRef} />
-        <Skills />
-        <Experience />
-        <Projects ref={projectsRef} />
+        <BackgroundBeamsWithCollision>
+          <Skills />
+        </BackgroundBeamsWithCollision>
+        <BackgroundBeamsWithCollision>
+          <Experience />
+        </BackgroundBeamsWithCollision>
+        <BackgroundBeamsWithCollision>
+          <Projects ref={projectsRef} />
+        </BackgroundBeamsWithCollision>
         <Testimonial />
         <Contact />
         <Footer />

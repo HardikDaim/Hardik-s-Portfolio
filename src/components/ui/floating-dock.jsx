@@ -25,7 +25,7 @@ const FloatingDockMobile = ({ items, className }) => {
       }}
       onTouchEnd={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto flex md:hidden h-16 gap-3 items-center rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-3 ",
+        "mx-auto mb-8 flex md:hidden h-16 gap-3 items-center rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-3 ",
         className
       )}
     >

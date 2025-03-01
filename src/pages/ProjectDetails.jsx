@@ -119,27 +119,7 @@ const ProjectDetails = () => {
           />
         </div>
         <div className="container px-4 mx-auto flex flex-col items-center justify-start my-10">
-          {loader ? (
-            <div className="shadow-lg w-full rounded-lg p-6 flex flex-col items-center ">
-              {/* Title Skeleton */}
-              <Skeleton height={40} width={300} className="mb-4" />
-
-              {/* Image Skeleton */}
-              <Skeleton
-                height={400}
-                width={800}
-                className="w-full h-auto rounded-lg mb-4"
-              />
-
-              {/* Description Skeleton */}
-              <Skeleton height={20} width={800} className="mb-4" />
-              <Skeleton height={20} width={800} className="mb-4" />
-              <Skeleton height={20} width={800} className="mb-4" />
-              <Skeleton height={20} width={800} className="mb-4" />
-              <Skeleton height={20} width={800} className="mb-4" />
-             
-            </div>
-          ) : project ? (
+          {project ? (
             <motion.div
               className="shadow-lg rounded-lg p-6 flex flex-col items-center"
               initial={{ opacity: 0, y: 50 }}

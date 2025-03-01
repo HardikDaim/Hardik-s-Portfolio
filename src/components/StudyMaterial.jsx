@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { FaLock } from "react-icons/fa6";
 
+
 const StudyMaterial = () => {
   const semesters = [
     {
@@ -67,11 +68,11 @@ const StudyMaterial = () => {
         />
         <meta property="og:type" content="webpage" />
       </Helmet>
-      <div className="relative isolate min-h-screen overflow-hidden flex flex-col items-center justify-center">
+      <div className="relative isolate min-h-screen flex flex-col items-center justify-center">
         {/* Top Blur Effect */}
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 -top-60  md:-top-80 -z-10 transform-gpu overflow-hidden blur-3xl"
+          className="absolute inset-x-0 -top-60  md:-top-80 -z-10 transform-gpu blur-3xl"
         >
           <div
             style={{
@@ -102,7 +103,7 @@ const StudyMaterial = () => {
             {semesters.map((item, index) => (
               <motion.div
                 key={index}
-                className="p-6 bg-white dark:bg-slate-800 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
+                className="p-6 border border-gray-200 dark:border-white rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}

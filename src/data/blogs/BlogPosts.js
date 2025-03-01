@@ -41,19 +41,19 @@ const blogPosts = [
           "By mastering error handling techniques in Node.js, you can ensure that your applications handle issues gracefully and maintain smooth operation even in the face of unexpected errors.",
       },
     ],
-    date: "November 21, 2024",
+    date: "February 21, 2025",
   },
 
   {
-    id: "the-evolution-of-javascript-from-es5-to-es2024",
-    title: "The Evolution of JavaScript: From ES5 to ES2024",
+    id: "the-evolution-of-javascript-from-es5-to-es2025",
+    title: "The Evolution of JavaScript: From ES5 to ES2025",
     excerpt:
-      "Explore the evolution of JavaScript from ES5 to ES2024. Discover key features and improvements introduced in each version and how they impact modern web development.",
+      "Explore the evolution of JavaScript from ES5 to ES2025. Discover key features and improvements introduced in each version and how they impact modern web development.",
     content: [
       {
         type: "text",
         content:
-          "JavaScript has undergone significant evolution over the years, with each new version introducing powerful features and enhancements. Starting from ECMAScript 5 (ES5) to the latest ECMAScript 2024 (ES2024), the language has seen numerous improvements that streamline development and enhance performance.",
+          "JavaScript has undergone significant evolution over the years, with each new version introducing powerful features and enhancements. Starting from ECMAScript 5 (ES5) to the latest ECMAScript 2025 (ES2025), the language has seen numerous improvements that streamline development and enhance performance.",
       },
       {
         type: "image",
@@ -68,7 +68,7 @@ const blogPosts = [
       {
         type: "text",
         content:
-          "Subsequent versions, including ES7 to ES2024, continued to enhance the language with features like async/await, optional chaining, and the latest addition of logical assignment operators and top-level await. These updates address modern development needs and improve code readability and functionality.",
+          "Subsequent versions, including ES7 to ES2025, continued to enhance the language with features like async/await, optional chaining, and the latest addition of logical assignment operators and top-level await. These updates address modern development needs and improve code readability and functionality.",
       },
       {
         type: "text",
@@ -78,7 +78,7 @@ const blogPosts = [
       {
         type: "image",
         src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Blog%20Images/sx4elgomuyvoxnj1sf0n",
-        alt: "ES2024 Features",
+        alt: "ES2025 Features",
       },
       {
         type: "text",
@@ -86,7 +86,7 @@ const blogPosts = [
           "By exploring the evolution of JavaScript, you'll gain insights into the language's growth and be better equipped to use its latest features and improvements in your projects.",
       },
     ],
-    date: "November 20, 2024",
+    date: "February 20, 2025",
   },
 
   {
@@ -132,7 +132,7 @@ const blogPosts = [
           "By mastering closures, you'll gain a deeper understanding of JavaScript's scope and function memory, leading to more powerful and flexible code.",
       },
     ],
-    date: "November 19, 2024",
+    date: "February 19, 2025",
   },
 
   {
@@ -178,7 +178,7 @@ const blogPosts = [
           "Understanding the differences between DFS and BFS helps you choose the right algorithm for your specific problem, improving the efficiency and effectiveness of your graph-related tasks.",
       },
     ],
-    date: "November 18, 2024",
+    date: "February 18, 2025",
   },
 
   {
@@ -223,7 +223,7 @@ const blogPosts = [
           "By mastering Promises and Async/Await, you'll be better equipped to handle asynchronous programming tasks and improve the overall quality of your JavaScript code.",
       },
     ],
-    date: "November 17, 2024",
+    date: "February 17, 2025",
   },
 
   {
@@ -268,7 +268,7 @@ const blogPosts = [
           "By mastering memoization, you'll be able to optimize your recursive functions, reduce computation time, and build more efficient algorithms.",
       },
     ],
-    date: "November 16, 2024",
+    date: "February 16, 2025",
   },
 
   {
@@ -313,7 +313,7 @@ const blogPosts = [
           "With a solid understanding of Big O notation, you'll be equipped to analyze and optimize your algorithms, leading to better performance and more efficient software solutions.",
       },
     ],
-    date: "November 15, 2024",
+    date: "February 15, 2025",
   },
 
   {
@@ -358,7 +358,7 @@ const blogPosts = [
           "By mastering recursion, you'll be able to write more efficient and elegant code, making it easier to solve complex problems and improve your overall programming skills.",
       },
     ],
-    date: "November 14, 2024",
+    date: "February 14, 2025",
   },
 
   {
@@ -403,7 +403,7 @@ const blogPosts = [
           "Embracing these debugging techniques and tools will help you tackle issues more efficiently and ensure that your web applications run smoothly. Developing strong debugging skills is essential for maintaining high-quality code and delivering reliable software.",
       },
     ],
-    date: "November 13, 2024",
+    date: "February 13, 2025",
   },
   
   {
@@ -448,7 +448,7 @@ const blogPosts = [
           "By implementing these advanced performance optimization techniques, you can enhance the responsiveness and efficiency of your React applications. Mastering these strategies will help you deliver a better user experience and maintain high performance as your app scales.",
       },
     ],
-    date: "November 12, 2024",
+    date: "February 12, 2025",
   },
 
   {
@@ -493,7 +493,7 @@ const blogPosts = [
           "Mastering CSS Grid is essential for modern web design. It provides a robust framework for building complex layouts that are both responsive and visually appealing. By leveraging CSS Grid, you can elevate your design skills and create more dynamic web experiences.",
       },
     ],
-    date: "November 11, 2024",
+    date: "February 11, 2025",
   },
 
   {
@@ -538,7 +538,7 @@ const blogPosts = [
           "Embracing GraphQL can greatly enhance your API's flexibility and efficiency, making it a powerful tool for modern web development. Understanding how to leverage its capabilities will help you build more responsive and scalable applications.",
       },
     ],
-    date: "November 10, 2024",
+    date: "February 10, 2025",
   },
 
   {
@@ -578,7 +578,7 @@ const blogPosts = [
           "Implementing lazy loading effectively can lead to faster page load times, reduced bounce rates, and improved user experience. It's an essential technique for optimizing the performance of modern web applications and ensuring that users have a smooth browsing experience.",
       },
     ],
-    date: "November 9, 2024",
+    date: "February 9, 2025",
   },
 
   {
@@ -618,7 +618,7 @@ const blogPosts = [
           "Next.js combines the best of both SSR and SSG, allowing you to choose the rendering method that best fits your application's needs. Embracing Next.js can significantly improve the performance and scalability of your React applications.",
       },
     ],
-    date: "November 8, 2024",
+    date: "February 8, 2025",
   },
 
   {
@@ -658,7 +658,7 @@ const blogPosts = [
           "Mastering Flexbox is crucial for modern web development. It allows you to create adaptable, responsive designs efficiently, ensuring a great user experience on any device.",
       },
     ],
-    date: "November 7, 2024",
+    date: "February 7, 2025",
   },
 
   {
@@ -698,7 +698,7 @@ const blogPosts = [
           "Tailwind CSS can significantly streamline your development process and enhance the overall design quality of your applications. With its powerful utility classes and customization options, Tailwind is an excellent choice for modern web design.",
       },
     ],
-    date: "November 6, 2024",
+    date: "February 6, 2025",
   },
   {
     id: "understanding-react-hooks-for-cleaner-code",
@@ -737,7 +737,7 @@ const blogPosts = [
           "Embrace React Hooks to write more concise, readable, and maintainable code. Understanding how to effectively use these hooks will greatly enhance your React development experience and improve the quality of your applications.",
       },
     ],
-    date: "November 5, 2024",
+    date: "February 5, 2025",
   },
   {
     id: "advanced-javascript-concepts-for-modern-development",
@@ -776,7 +776,7 @@ const blogPosts = [
         content: `Mastering these concepts will improve your ability to write efficient and maintainable JavaScript code. Understanding how closures, promises, and async/await work will help you tackle complex programming challenges and build more robust applications.`,
       },
     ],
-    date: "November 4, 2024",
+    date: "February 4, 2025",
   },
   {
     id: "building-restful-apis-with-nodejs-and-expressjs",
@@ -815,7 +815,7 @@ const blogPosts = [
         content: `To further enhance your API, consider implementing versioning, rate limiting, and documentation. Versioning ensures backward compatibility as your API evolves, while rate limiting protects against abuse. Comprehensive documentation will help users understand and interact with your API more effectively.`,
       },
     ],
-    date: "November 3, 2024",
+    date: "February 3, 2025",
   },
   {
     id: "understanding-redux-for-state-management",
@@ -854,7 +854,7 @@ const blogPosts = [
         content: `For optimal use of Redux, it's important to follow best practices such as normalizing state, using selectors, and leveraging Redux DevTools for debugging. These practices can help maintain a clean and efficient state management system.`,
       },
     ],
-    date: "November 2, 2024",
+    date: "February 2, 2025",
   },
   {
     id: "introduction-to-react-hooks",
@@ -893,7 +893,7 @@ const blogPosts = [
         content: `To fully leverage hooks, it's important to understand their rules and best practices. For example, hooks should be called at the top level of your component and should not be called conditionally. Following these guidelines ensures that hooks work consistently and predictably.`,
       },
     ],
-    date: "November 1, 2024",
+    date: "February 1, 2025",
   },
 ];
 
