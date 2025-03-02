@@ -78,7 +78,7 @@ const Header = ({ loader }) => {
               <div className="flex items-center justify-center gap-2 md:gap-4">
                 <div className="relative bg-gray-200 w-full text-black hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 p-2 rounded-full focus:outline-none transition-colors duration-300">
                   {/* Red Dot */}
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full" />
+                  <div className="absolute top-0 right-0 w-2 h-2 animate-pulse bg-red-500 rounded-full" />
                   {/* Button */}
                   <Link to="/btech/cse/study-material" className="">
                     <PiExam size={20} />
