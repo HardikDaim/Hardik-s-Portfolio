@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import about from "../assets/about.jpeg";
 
 const About = ({ projectsRef }) => {
   const data = {
@@ -15,7 +13,8 @@ const About = ({ projectsRef }) => {
   `,
     resumeLink:
       "https://drive.google.com/file/d/1DeTws5zsXO27LdfUUYOheZjQaZXDwIgD/view?usp=share_link",
-    image: about,
+    image:
+      "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/edtityj633xehfpggivg",
   };
 
   const scrollToProjects = () => {
@@ -53,24 +52,22 @@ const About = ({ projectsRef }) => {
             <motion.img
               src={data.image}
               alt="About Me"
-              className="rounded-xl w-full  mx-auto"
+              className="rounded-xl w-96 h-96 mx-auto shadow-lg "
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             />
-            <div className="text-sm md:text-lg py-10">
-              <div className="flex items-center justify-center text-center gap-20">
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="text-gray-700 dark:text-gray-300"
-                  dangerouslySetInnerHTML={{ __html: data.description }} // Render HTML
-                />
-              </div>
-              <div className="flex items-center justify-center gap-20">
+            <div className="flex flex-col items-center justify-center text-center py-10">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-gray-700 dark:text-gray-300 mb-10"
+                dangerouslySetInnerHTML={{ __html: data.description }} // Render HTML
+              />
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-20">
                 <motion.button
-                  className="text-sm md:text-2xl py-4 mt-10 px-2 border-4 border-blue-500 bg-blue-500 rounded-xl text-white hover:bg-blue-600 transition-colors"
+                  className="text-sm md:text-2xl py-4 px-6 border-4 border-blue-500 bg-blue-500 rounded-xl text-white hover:bg-blue-600 transition-colors"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
@@ -79,7 +76,7 @@ const About = ({ projectsRef }) => {
                   My Projects
                 </motion.button>
                 <motion.button
-                  className="text-sm md:text-2xl py-4 mt-10 px-2 border-4 border-blue-500 rounded-xl text-gray-800 dark:text-white hover:bg-blue-500 hover:text-white transition-colors"
+                  className="text-sm md:text-2xl py-4 px-6 border-4 border-blue-500 rounded-xl text-gray-800 dark:text-white hover:bg-blue-500 hover:text-white transition-colors"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
