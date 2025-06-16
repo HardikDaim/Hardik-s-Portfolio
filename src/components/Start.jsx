@@ -1,6 +1,4 @@
 import React from "react";
-import "react-loading-skeleton/dist/skeleton.css";
-import "../App.css";
 import { FloatingDock } from "./ui/floating-dock";
 import {
   IconBrandFacebook,
@@ -10,13 +8,13 @@ import {
   IconBrandLinkedin,
 } from "@tabler/icons-react";
 import { AnimatedTestimonials } from "./ui/animated-testimonials";
-import { BackgroundBeamsWithCollision } from "./ui/background-beams-with-collision";
+import { motion } from "framer-motion";
 
 const Start = () => {
   const testimonials = [
     {
       quote:
-        "My expertise as a Software Engineer is unmatched and ability to solve complex problems with elegant solutions has been a game-changer for my team.",
+        "My expertise as a Software Engineer is unmatched, and my ability to solve complex problems with elegant solutions has been a game-changer for my team.",
       name: "Hardik Daim",
       designation: "Software Engineer",
       src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/edtityj633xehfpggivg",
@@ -37,88 +35,86 @@ const Start = () => {
     },
   ];
 
-  const links = [
+  const socialLinks = [
     {
       title: "LinkedIn",
-      icon: (
-        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconBrandLinkedin className="h-6 w-6" />,
       href: "https://www.linkedin.com/in/hardik-daim-ab0b07251",
+      color: "text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50",
     },
     {
       title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconBrandGithub className="h-6 w-6" />,
       href: "https://github.com/HardikDaim",
+      color: "text-gray-800 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800",
     },
     {
       title: "LeetCode",
-      icon: (
-        <IconBrandLeetcode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconBrandLeetcode className="h-6 w-6" />,
       href: "https://leetcode.com/u/hardikdaim",
+      color: "text-yellow-600 hover:bg-yellow-100 dark:hover:bg-yellow-900/50",
     },
     {
       title: "Instagram",
-      icon: (
-        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconBrandInstagram className="h-6 w-6" />,
       href: "https://www.instagram.com/hardikdaim_17",
+      color: "text-pink-600 hover:bg-pink-100 dark:hover:bg-pink-900/50",
     },
-
     {
       title: "Facebook",
-      icon: (
-        <IconBrandFacebook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
+      icon: <IconBrandFacebook className="h-6 w-6" />,
       href: "https://www.facebook.com/hardik.daim",
+      color: "text-blue-700 hover:bg-blue-100 dark:hover:bg-blue-900/50",
     },
   ];
 
   return (
-    <>
-
-   
-    <div className="relative isolate min-h-screen flex flex-col items-center justify-center">
-      {/* Top Blur Effect */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 -top-60 md:-top-80 -z-10 transform-gpu overflow-hidden blur-3xl"
-      >
-        <div
-          style={{
-            clipPath:
-              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-          }}
-          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-500 via-blue-600 to-blue-200 opacity-50 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center px-4">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden -z-10">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.2 }}
+          transition={{ duration: 1.5 }}
+          className="absolute right-0 top-1/4 w-[500px] h-[500px] bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full filter blur-[150px]"
+        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.2 }}
+          transition={{ duration: 1.5, delay: 0.5 }}
+          className="absolute left-0 bottom-1/4 w-[500px] h-[500px] bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full filter blur-[150px]"
         />
       </div>
 
-      {/* Content */}
-      <div className="container w-full px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center text-center">
-          <AnimatedTestimonials testimonials={testimonials} />
+      <div className="container mx-auto max-w-7xl">
+        <div className="flex flex-col items-center justify-center">
+          {/* Testimonials Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="w-full max-w-5xl z-10"
+          >
+            <AnimatedTestimonials testimonials={testimonials} />
+          </motion.div>
 
-          <FloatingDock items={links} />
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="w-full max-w-2xl"
+          >
+            <div className="flex flex-col items-center gap-6">
+              <h3 className="text-xl font-medium text-gray-600 dark:text-gray-400">
+                Connect with me
+              </h3>
+              <FloatingDock items={socialLinks} />
+            </div>
+          </motion.div>
         </div>
       </div>
-
-      {/* Bottom Blur Effect */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl"
-      >
-        <div
-          style={{
-            clipPath:
-              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-          }}
-          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-orange-800 via-yellow-500 to-yellow-300 opacity-50 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-        />
-      </div>
-    </div>
-    </>
+    </section>
   );
 };
 
