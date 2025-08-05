@@ -149,7 +149,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               ))}
             </motion.p>
             <motion.div className="flex items-center justify-center mt-4">
-            <motion.button
+            <button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() =>
@@ -162,7 +162,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               className="flex md:hidden px-8 py-3 border-2 border-blue-500 text-blue-500 dark:text-blue-400 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-blue-500 hover:text-white dark:hover:text-white"
             >
               Download Resume
-            </motion.button>
+            </button>
 
             </motion.div>
           </motion.div>

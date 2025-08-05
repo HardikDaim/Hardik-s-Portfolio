@@ -7,9 +7,20 @@ import { GlowingEffect } from "./ui/glowing-effect";
 const Experience = ({ loader }) => {
   const experienceData = [
     {
+      role: "Software Developer Engineer Intern",
+      company: "DBS Bank",
+      duration: "Jun 2025 - Present",
+      responsibilities: [
+        "Built enterprise features for internal applications used by 500+ employees using Angular, Spring Boot, and SQL.",
+        "Automated reporting workflows using Python and SQL, reducing manual effort by 30% across 3 departments.",
+        "Contributed to CI/CD pipeline improvements using DevOps best practices, aiming to reduce deployment time by 20%.",
+        "Participated in bi-weekly agile sprints, collaborating with product and QA teams."
+      ],
+    },
+    {
       role: "Core Technical Member",
       company: "Google Developers Group (GDG)",
-      duration: "Sep 2024 - Present",
+      duration: "Sep 2024 - Jun 2025",
       responsibilities: [
         "Collaborated with a global community of developers to promote innovative technology solutions.",
         "Led and participated in hands-on workshops, hackathons, and tech talks focused on Google Cloud, Machine Learning, and Web Development tools.",

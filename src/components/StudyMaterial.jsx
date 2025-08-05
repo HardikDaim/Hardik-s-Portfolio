@@ -33,7 +33,7 @@ const StudyMaterial = () => {
     },
     {
       name: "7th Semester",
-      link: "",
+      link: "https://drive.google.com/drive/folders/1eJpP-uZmlbisvv1jntNgYarR_ydxsvg6?usp=share_link",
     },
   ];
 

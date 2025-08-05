@@ -10,7 +10,6 @@ const Contact = lazy(() => import("../components/Contact"));
 const Footer = lazy(() => import("../components/Footer"));
 const Testimonial = lazy(() => import("../components/Testimonial"));
 import { Helmet } from "react-helmet-async";
-import { BackgroundBeamsWithCollision } from "../components/ui/background-beams-with-collision";
 
 const Home = () => {
   const projectsRef = useRef(null);
@@ -71,18 +70,10 @@ const Home = () => {
       </Helmet> */}
       <Suspense fallback={<LoadingAnimation />}>
         <Start />
-        <BackgroundBeamsWithCollision>
-          <About projectsRef={projectsRef} />
-        </BackgroundBeamsWithCollision>
-        <BackgroundBeamsWithCollision>
-          <Skills />
-        </BackgroundBeamsWithCollision>
-        <BackgroundBeamsWithCollision>
-          <Experience />
-        </BackgroundBeamsWithCollision>
-        <BackgroundBeamsWithCollision>
-          <Projects ref={projectsRef} />
-        </BackgroundBeamsWithCollision>
+        <About projectsRef={projectsRef} />
+        <Skills />
+        <Experience />
+        <Projects ref={projectsRef} />
         <Testimonial />
         <Contact />
         <Footer />

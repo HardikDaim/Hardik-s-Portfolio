@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import AnimatedLaptop from "./ui/animatedLaptop";
 
@@ -11,7 +10,7 @@ const About = ({ projectsRef }) => {
       and <span class="text-blue-500 font-medium">MongoDB</span>. With a strong foundation in <span class="text-blue-500 font-medium">JavaScript</span>, <span class="text-blue-500 font-medium">TypeScript</span>, and <span class="text-blue-500 font-medium">RESTful APIs</span>, 
       I thrive on solving complex problems and delivering seamless user experiences.
     `,
-    resumeLink: "https://drive.google.com/file/d/1DeTws5zsXO27LdfUUYOheZjQaZXDwIgD/view?usp=share_link",
+    resumeLink: "https://drive.google.com/drive/folders/1Unmft-zIcRDX-PBuLaEAnF4jLO_KHkeA?usp=share_link",
   };
 
   const scrollToProjects = () => {
@@ -19,7 +18,7 @@ const About = ({ projectsRef }) => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden flex items-center justify-center my-20 px-4">
+    <section className="relative w-full overflow-hidden flex items-center justify-center my-20 md:my-10 md:py-20 px-4">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden -z-10">
         <div className="absolute right-0 top-1/4 w-[500px] h-[500px] bg-blue-500 rounded-full filter blur-[150px] opacity-20"></div>
@@ -74,14 +73,14 @@ const About = ({ projectsRef }) => {
                 View My Projects
               </motion.button>
               
-              <motion.button
+              <button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => window.open(data.resumeLink, "_blank")}
                 className="px-8 py-3 border-2 border-blue-500 text-blue-500 dark:text-blue-400 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-blue-500 hover:text-white dark:hover:text-white"
               >
-                Download Resume
-              </motion.button>
+                View my Certifications
+              </button>
             </div>
           </motion.div>
         </div>
