@@ -17,21 +17,21 @@ const Start = () => {
         "My expertise as a Software Engineer is unmatched, and my ability to solve complex problems with elegant solutions has been a game-changer for my team.",
       name: "Hardik Daim",
       designation: "Software Engineer",
-      src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/edtityj633xehfpggivg",
+      src: "/hardik-1.webp",
     },
     {
       quote:
         "As a Full Stack Developer, I've an incredible knack for building seamless, end-to-end applications. My work is both efficient and scalable.",
       name: "Hardik Daim",
       designation: "Full Stack Developer",
-      src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/hz4rdskrbe8rrqen2crf",
+      src: "/hardik-2.webp",
     },
     {
       quote:
         "My skills as a Web Developer are top-notch. I create visually stunning and highly functional websites that exceed expectations every time.",
       name: "Hardik Daim",
       designation: "Web Developer",
-      src: "https://res.cloudinary.com/dpqzwyq66/image/upload/f_auto,q_auto/v1/Portfolio/j4nkvx5pdnzmjlw8hard",
+      src: "/hardik-3.webp",
     },
   ];
 
